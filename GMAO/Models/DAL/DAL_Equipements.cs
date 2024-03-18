@@ -13,7 +13,7 @@ namespace GMAO.Models.DAL
 
             using (SqlConnection connection = DBConnection.GetConnection())
             {
-                string StrAQL = "Insert Into Equipements(Type,Marque,Modele, NumeroSerie,Localisation, DateInstallation,DateGarantie) ";
+                string StrAQL = "Insert Into Equipements(Type,Marque,Modele, NumeroSerie,Localisation, DateInstallation,DateGarantie) VALUES(@Type,@Marque,@Modele,@NumeroSerie,@Localisation,@DateInstallation,@DateGarantie)";
 
                 SqlCommand cmd = new SqlCommand(StrAQL, connection);
                 cmd.Parameters.AddWithValue("@Type", equipement.Type);
@@ -23,7 +23,7 @@ namespace GMAO.Models.DAL
                 cmd.Parameters.AddWithValue("@Localisation", equipement.Localisation);
                 cmd.Parameters.AddWithValue("@DateInstallation", equipement.DateInstallation);
                 cmd.Parameters.AddWithValue("@DateGarantie", equipement.DateGarantie);
-                return Convert.ToInt32(DataBaseAccessUtilities.ScalarRequest(cmd));
+                return Convert.ToInt32(DataBaseAccessUtilities.NonQueryRequest(cmd));
 
             } 
         }
@@ -32,7 +32,7 @@ namespace GMAO.Models.DAL
         {
             using (SqlConnection conn = DBConnection.GetConnection())
             {
-                string StrSQL = " Update Equipements SET Type=@Type,Marque=@Marque,Modele=@Modele, NumeroSerie=@NumeroSerie,Localisation=@Localisation, DateInstallation=@DateInstallation,DateGarantie=@DateGarantie WHERE Id = @EntityKey";
+                string StrSQL = " Update Equipements SET Type=@Type,Marque=@Marque,Modele=@Modele, NumeroSerie=@NumeroSerie,Localisation=@Localisation, DateInstallation=@DateInstallation,DateGarantie=@DateGarantie WHERE IdEquipement = @EntityKey";
                 SqlCommand cmd = new SqlCommand( StrSQL, conn);
                 cmd.Parameters.AddWithValue ("@EntityKey", id);
                 cmd.Parameters.AddWithValue("@Type", equipement.Type);
@@ -53,7 +53,7 @@ namespace GMAO.Models.DAL
             using (SqlConnection connection = DBConnection.GetConnection())
             {
 
-                string StrSQL = "Delete From Equipements Where Id=@EntityKey";
+                string StrSQL = "Delete From Equipements Where IdEquipement=@EntityKey";
                 SqlCommand cmd = new SqlCommand(StrSQL, connection);
                 cmd.Parameters.AddWithValue("@EntityKey", EntityKey);
                 DataBaseAccessUtilities.NonQueryRequest (cmd);
@@ -63,7 +63,7 @@ namespace GMAO.Models.DAL
         private static Equipements GetEntityFromDataRow(DataRow Datarow)
         {
             Equipements equipements = new Equipements();
-            equipements.IdEquipement = Convert.ToInt32(Datarow["ID"]);
+            equipements.IdEquipement = Convert.ToInt32(Datarow["IdEquipement"]);
             equipements.Type = Datarow["Type"].ToString();
             equipements.Marque = Datarow["Marque"].ToString();
             equipements.Modele = Datarow["Modele"].ToString();
@@ -96,7 +96,7 @@ namespace GMAO.Models.DAL
             using(SqlConnection cnn=DBConnection.GetConnection())
             {
                 cnn.Open();
-                string StrSQL = "Select * From Equipements Where Id=@EntityKey";
+                string StrSQL = "Select * From Equipements Where IdEquipement=@EntityKey";
                 SqlCommand cmd =  new SqlCommand(StrSQL,cnn);
 
                 cmd.Parameters.AddWithValue("@EntityKey", EntityKey);

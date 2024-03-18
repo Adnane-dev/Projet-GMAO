@@ -19,8 +19,9 @@ let serializeList = (dtoEquipementList) => {
         return JSON.stringify(dtoEquipementList);
     }
     // Deserialize Equipement
-let deserialize = (object) => {
-    let dtoEquipement = new Equipement(object.Id, object.Type, object.Marque, object.Modele, object.NumeroSerie, object.Localisation, object.DateInstallation, object.DateGarantie);
+let deserialize = (object) =>
+ {
+    let dtoEquipement = new equipement(object.idEquipement, object.type, object.marque, object.modele, object.numeroSerie, object.localisation, object.dateInstallation, object.dateGarantie);
     return dtoEquipement;
 }
 
@@ -42,7 +43,7 @@ let deserializeList = (jsonEquipementList) => {
  * **********************************************************************
  ***********************************************************************/
 
-const urlAPI = "http://localhost:24632/Equipements";
+const urlAPI = "http://localhost:24632/api/Equipements";
 
 /*******************************************    Asynchronous add Equipement     ***********************************/
 let addEquipementAsync = async(equipement) => {

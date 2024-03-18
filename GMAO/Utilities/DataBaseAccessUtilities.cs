@@ -1,12 +1,42 @@
 ﻿using System.Data.SqlClient;
 using System.Data;
 
+using System;
+
+
 namespace ServerTemplateAPI.Utilities
 {
     public static class DataBaseAccessUtilities
     {
 
-        public static int NonQueryRequest(SqlCommand MyCommand)
+
+
+            public static SqlDataReader ReaderRequest(SqlCommand cmd)
+            {
+                try
+                {
+                    cmd.Connection.Open();
+                    return cmd.ExecuteReader();
+                }
+                catch (Exception ex)
+                {
+                    // Gérer les exceptions appropriées
+                    Console.WriteLine(ex.Message);
+                    throw;
+                }
+                /*finally
+                {
+                    //if (cmd.Connection.State == System.Data.ConnectionState.Open)
+                        cmd.Connection.Close();
+                }*/
+            }
+
+
+
+
+
+
+    public static int NonQueryRequest(SqlCommand MyCommand)
         {
             try
             {
@@ -71,10 +101,12 @@ namespace ServerTemplateAPI.Utilities
                 }
 
                 return MyCommand.ExecuteScalar();
-            }
-            catch (SqlException e)
+            } 
+
+
+            catch (SqlException ex)
             {
-                throw new MyException(e, "DataBase Error", e.Message, "DAL");
+                throw new MyException(ex, "DataBase Error", ex.Message, "DAL");
             }
             finally
             {
@@ -112,6 +144,7 @@ namespace ServerTemplateAPI.Utilities
         {
             try
             {
+                //MyCommand.Connection.Open();
                 DataTable Table;
                 SqlDataAdapter SelectAdapter = new SqlDataAdapter(MyCommand);
                 Table = new DataTable();
@@ -131,6 +164,7 @@ namespace ServerTemplateAPI.Utilities
         {
             try
             {
+               // MyConnection.Open();
                 DataTable Table;
                 SqlCommand SelectCommand = new SqlCommand(StrSelectRequest, MyConnection);
                 SqlDataAdapter SelectAdapter = new SqlDataAdapter(SelectCommand);

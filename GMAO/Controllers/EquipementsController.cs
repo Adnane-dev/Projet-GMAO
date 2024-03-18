@@ -7,7 +7,7 @@ using GMAO.Models.BLL;
 namespace GMAO.Controllers
 {
     
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class EquipementsController : Controller
     {

@@ -11,8 +11,9 @@ namespace GMAO.Models.Entities
         public DateTime DateDebut { get; set; }
         public DateTime DateFin { get; set; }
         public decimal Prix { get; set; }
-        public Clients Client { get; set; } // Navigation vers l'objet Client associé
-
+        public Clients Clients { get; set; } // Navigation vers l'objet Client associé
+        //public Idclient 
+        public int IdClient  { get; set; }
 
     }
 

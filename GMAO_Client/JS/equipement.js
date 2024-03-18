@@ -24,7 +24,8 @@ closeModal.forEach(item => {
 
 frmEquipement.onsubmit = (event) => {
     event.preventDefault();
-    let Equipement = serialize(frmEquipement.serialize(frmEquipement.querySelectorAll("input")));
+    let equipement = serialize(frmEquipement.serialize(frmEquipement.querySelectorAll("input")));
+    console.log(equipement);
     if (actionToDo === "Add") {
 
         /***************************************   Asynchronous method add Equipement    **************************************** */
@@ -51,21 +52,21 @@ frmEquipement.onsubmit = (event) => {
 
         /***************************************   Synchronous method add Equipement    ****************************************** */
 
-        addEquipementSync(Equipement, function(response, error) {
+        addEquipementSync(equipement, function(response, error) {
             if (response == null) {
                 messageError(error);
             } else {
                 alertify.alert(response.message, function() {
-                    let Equipement = response.data;
-                    arrayEquipements.push(Equipement);
-                    bindDataToFrmNomFormulaire(Equipement);
+                    let equipement = response.data;
+                    arrayEquipements.push(equipement);
+                    bindDataToFrmNomFormulaire(equipement);
                     hideModal();
                 });
             }
         });
 
     } else {
-        let id = document.getElementById("Id").value;
+        let id = document.getElementById("IdEquipement").value;
 
         /***************************************   Asynchronous method update Equipement    **************************************** */
         /*updateEquipement(id,Equipement)
@@ -90,13 +91,13 @@ frmEquipement.onsubmit = (event) => {
               messageError(error);
           });*/
         /***************************************   Synchronous method update Equipement    ****************************************** */
-        updateEquipementSync(id, Equipement, function(response, error) {
+        updateEquipementSync(id, equipement, function(response, error) {
             if (response == null) {
                 messageError(error);
             } else {
                 alertify.alert(response.message, function() {
                     let newEquipement = response.data;
-                    let index = arrayEquipements.findIndex(a => a.id === newEquipement.id);
+                    let index = arrayEquipements.findIndex(a => a.idEquipement === newEquipement.idEquipement);
                     arrayEquipements.splice(index, 1, newEquipement);
                     bindDataUpdate(id, newEquipement);
                     hideModal();
@@ -106,20 +107,25 @@ frmEquipement.onsubmit = (event) => {
     }
 }
 
-let getDataFromFrmNomFormulaire = (Equipement) => {
-    document.getElementById("Id").value = Equipement.id;
-    document.getElementById("Designation").value = Equipement.designation;
-    document.getElementById("Categorie").value = Equipement.categorie;
-    document.getElementById("Prix").value = Equipement.prix;
-    if (Equipement.dateFabrication)
-        document.getElementById("DateFabrication").value = Equipement.dateFabrication.slice(0, 10);
+let getDataFromFrmNomFormulaire = (equipement) => {
+    document.getElementById("IdEquipement").value = equipement.idEquipement;
+    document.getElementById("Type").value = equipement.type;
+    document.getElementById("Marque").value = equipement.marque;
+    document.getElementById("Modele").value = equipement.modele;
+    document.getElementById("NumeroSerie").value = equipement.numeroSerie;
+    document.getElementById("Localisation").value = equipement.localisation;
+    if (equipement.dateInstallation)
+        document.getElementById("DateInstallation").value = equipement.dateInstallation.slice(0, 10);
+    if (equipement.dateGarantie)
+        document.getElementById("DateGarantie").value = equipement.dateGarantie.slice(0, 10);
+
 }
 let Update = (id) => {
     if (id) {
         modalTitle.textContent = "Update Equipement";
         actionToDo = "Update";
-        let Equipement = arrayEquipements.find(a => a.id === id);
-        getDataFromFrmNomFormulaire(Equipement);
+        let equipement = arrayEquipements.find(a => a.idEquipement === id);
+        getDataFromFrmNomFormulaire(equipement);
         EquipementModal.show();
     } else {
         alertify.alert("Verify selected data");
@@ -161,7 +167,7 @@ let Delete = (id) => {
                         messageError(error);
                     } else {
                         alertify.success(response.message);
-                        arrayEquipements = arrayEquipements.filter(a => a.id !== id);
+                        arrayEquipements = arrayEquipements.filter(a => a.idEquipement !== id);
                         document.getElementById(`${id}`).remove();
                     }
                 });
@@ -200,21 +206,23 @@ let messageError = (error) => {
 let bindDataToTableomTableau = (data) => {
     EquipementsTbodyTable.innerHTML = "";
     for (let equipement of data) {
-        EquipementsTbodyTable.innerHTML += `<tr id="${equipement.id}">
-                                     <td id="designation_${equipement.id}">${equipement.type}</td>
-                                     <td id="categorie_${equipement.id}">${equipement.marque ?? ""}</td>
-                                     <td id="prix_${equipement.id}">${equipement.modele ?? ""}</td>
-                                     <td id="prix_${equipement.id}">${equipement.Localisation ?? ""}</td>
+        EquipementsTbodyTable.innerHTML += `<tr id="${equipement.idEquipement}">
+                                     <td id="type_${equipement.idEquipement}">${equipement.type}</td>
+                                     <td id="marque_${equipement.idEquipement}">${equipement.marque ?? ""}</td>
+                                     <td id="modele_${equipement.idEquipement}">${equipement.modele ?? ""}</td>
+                                     <td id="numeroSerie_${equipement.idEquipement}">${equipement.numeroSerie ?? ""}</td>
+                                     <td id="localisation_${equipement.idEquipement}">${equipement.localisation ?? ""}</td>
                                      
 
-                                     <td id="dateFabrication_${equipement.id}">${dateFormat(equipement.dateInstallation) ?? ""}</td>
-                                     <td id="dateFabrication_${equipement.id}">${dateFormat(equipement.dateGarantie) ?? ""}</td>
+
+                                     <td id="dateInstallation_${equipement.idEquipement}">${dateFormat(equipement.dateInstallation) ?? ""}</td>
+                                     <td id="dateGarantie_${equipement.idEquipement}">${dateFormat(equipement.dateGarantie) ?? ""}</td>
                                      
                                      <td class="action-buttons">
-                                      <a class="green" href="#" onclick="Update(${equipement.id})">
+                                      <a class="green" href="#" onclick="Update(${equipement.idEquipement})">
                                         <i class="fa fa-edit fa-2x"></i>
                                       </a>
-                                      <a class="red" href="#" onclick="Delete(${equipement.id})">
+                                      <a class="red" href="#" onclick="Delete(${equipement.idEquipement})">
                                         <i class="fa fa-trash fa-2x"></i>
                                       </a>
                                      </td>
@@ -223,34 +231,45 @@ let bindDataToTableomTableau = (data) => {
 }
 
 let bindDataToFrmNomFormulaire = (equipement) => {
-    EquipementsTbodyTable.innerHTML += `<tr id="${equipement.id}">
-                                        <td id="type_${equipement.id}">${equipement.type}</td>
-                                        <td id="marque_${equipement.id}">${equipement.marque ?? ""}</td>
-                                        <td id="modele_${equipement.id}">${equipement.modele ?? ""}</td>
-                                        <td id="localisation_${equipement.id}">${equipement.Localisation ?? ""}</td>
-                                        <td id="numeroSerie_${equipement.id}">${equipement.NumeroSerie}</td>
-                                       
-                                        <td id="dateInstallation_${equipement.id}">${dateFormat(equipement.dateInstallation) ?? ""}</td>
-                                        <td id="dateGarantie_${equipement.id}">${dateFormat(equipement.dateGarantie) ?? ""}</td>
+    EquipementsTbodyTable.innerHTML += `<tr id="${equipement.idEquipement}">
+                                        <td id="type_${equipement.idEquipement}">${equipement.type}</td>
+                                        <td id="marque_${equipement.idEquipement}">${equipement.marque ?? ""}</td>
+                                        <td id="modele_${equipement.idEquipement}">${equipement.modele ?? ""}</td>
+                                        <td id="numeroSerie_${equipement.idEquipement}">${equipement.numeroSerie}</td>
+                                        <td id="localisation_${equipement.idEquipement}">${equipement.localisation ?? ""}</td>
+                                        <td id="dateInstallation_${equipement.idEquipement}">${dateFormat(equipement.dateInstallation) ?? ""}</td>
+                                        <td id="dateGarantie_${equipement.idEquipement}">${dateFormat(equipement.dateGarantie) ?? ""}</td>
                                        
                                         <td class="action-buttons">
-                                        <a class="green" href="#" onclick="Update(${equipement.id})">
+                                        <a class="green" href="#" onclick="Update(${equipement.idEquipement})">
                                         <i class="fa fa-edit fa-2x"></i>
                                         </a>
-                                        <a class="red" href="#" onclick="Delete(${equipement.id})">
+                                        <a class="red" href="#" onclick="Delete(${equipement.idEquipement})">
                                         <i class="fa fa-trash fa-2x"></i>
                                         </a>
                                         </td>
                                     </tr>`;
 }
-
 let bindDataUpdate = (id, equipement) => {
-    document.getElementById(`type_${id}`).innerText = equipement.type;
-    document.getElementById(`marque_${id}`).innerText = equipement.marque ? ? "";
-    document.getElementById(`modele_${id}`).innerText = equipement.modele ? ? "";
-    document.getElementById(`numeroSerie_${id}`).innerText = equipement.NumeroSerie;
-    document.getElementById(`localisation_${id}`).innerText = equipement.Localisation ? ? "";
+    console.log(id, equipement);
+    console.log(equipement);
+        document.getElementById(`type_${id}`).innerText = equipement.type ?? "";
+        document.getElementById(`marque_${id}`).innerText = equipement.marque ?? "";
+        document.getElementById(`modele_${id}`).innerText = equipement.modele ?? "";
+        document.getElementById(`numeroSerie_${id}`).innerText = equipement.numeroSerie;
+        document.getElementById(`localisation_${id}`).innerText = equipement.localisation ?? "";
 
-    document.getElementById(`dateInstallation_${id}`).innerText = dateFormat(equipement.dateInstallation) ? ? "";
-    document.getElementById(`dateGarantie_${id}`).innerText = dateFormat(equipement.dateInstallation) ? ? "";
-}
+        document.getElementById(`dateInstallation_${id}`).innerText = dateFormat(equipement.dateInstallation) ?? "";
+        document.getElementById(`dateGarantie_${id}`).innerText = dateFormat(equipement.dateGarantie) ?? "";
+    }
+    /*
+    let bindDataUpdate = (id, equipement) => {
+        document.getElementById(`type_${id}`).innerText = equipement.type ? ? "";
+        document.getElementById(`marque_${id}`).innerText = equipement.marque ? ? "" ;
+        document.getElementById(`modele_${id}`).innerText = equipement.modele ? ? "";
+        document.getElementById(`numeroSerie_${id}`).innerText = equipement.NumeroSerie;
+        document.getElementById(`localisation_${id}`).innerText = equipement.Localisation ? ? "";
+
+        document.getElementById(`dateInstallation_${id}`).innerText = dateFormat(equipement.dateInstallation) ? ? "";
+        document.getElementById(`dateGarantie_${id}`).innerText = dateFormat(equipement.dateInstallation) ? ? "";
+    }*/

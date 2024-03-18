@@ -11,6 +11,7 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<GMAOContext>(options => options.UseSqlServer(connectionString));
 builder.Services.AddControllers();
 
+
 // Ajoutez la configuration CORS
 builder.Services.AddCors(options =>
 {

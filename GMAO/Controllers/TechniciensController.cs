@@ -16,7 +16,7 @@ namespace GMAO.Controllers
 
         public TechniciensController(GMAOContext context)
         {
-            _context = context;
+            _context = context; 
         }
 
         // GET: api/Techniciens

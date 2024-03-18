@@ -1,0 +1,1892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Admin Console</title>
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet" >
+<link href="css/font-awesome.min.css" rel="stylesheet" >
+<link href="css/style.css" rel="stylesheet">
+<link href="css/nav.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/shCoreEclipse.css"/>
+<link type="text/css" rel="Stylesheet" href="css/shThemeEclipse.css" />
+<link href="css/global.css" rel="stylesheet">
+<link href="css/form_1.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+<script type="text/javascript" src="js/XRegExp.js"></script>
+<script type="text/javascript" src="js/shCore.js"></script>
+<script type="text/javascript" src="js/shBrushXml.js"></script>
+<script type="text/javascript">
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['gutter'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+    SyntaxHighlighter.all();
+</script>
+
+
+
+
+   
+</head>
+<body>
+    
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="index.html"><h4>ADMINISTRATOR</h4></a>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <ul class="nav hide">
+  
+  <li class="nav-item sign_box_1">
+    <a class="nav-link  text-light" href="#"><i class="fa fa-comment"></i> 3</a>
+  </li>
+  
+  <li class="nav-item dropdown notification">
+    <a class="nav-link dropdown-toggle text-white  border-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><button type="button" class="border-0 btn bg-dark text-white   position-relative">
+  <i class="fa fa-bell"></i>
+  <span class="position-absolute start-100 translate-middle badge rounded-pill bg-danger" style="top:5px;">
+    3+
+    <span class="visually-hidden">unread messages</span>
+  </span>
+</button></a>
+    <ul class="dropdown-menu drop_1" style="left:auto; right:0; min-width:300px;">
+	  <li class="noti_p">Notification <span class="pull-right"><a href="#">Clear All</a></span></li>
+      <li class="noti_p1">
+	  <div class="noti_i p-2  row m-0">
+	   <div class="col-sm-3">
+	    <div class="noti_il">
+		  <a href="#"><img src="img/1.jpg" alt="abc" class="rounded-circle w-100"></a>
+		</div>
+	   </div>
+	   <div class="col-sm-9 p-0">
+	    <div class="noti_ir">
+		  <p class="mb-0">Caleb Flakelar commented on Admin
+                                                <small class="text-muted font-13">1 min ago</small>
+          </p>
+		</div>
+	   </div>
+	  </div>
+	  
+	  </li>
+	  <li class="noti_p1">
+	  <div class="noti_i p-2  row m-0">
+	   <div class="col-sm-3">
+	    <div class="noti_il">
+		  <a href="#"><img src="img/7.jpg" alt="abc" class="rounded-circle w-100"></a>
+		</div>
+	   </div>
+	   <div class="col-sm-9 p-0">
+	    <div class="noti_ir">
+		  <p class="mb-0">Caleb Flakelar commented on Admin
+                                                <small class="text-muted font-13">1 min ago</small>
+          </p>
+		</div>
+	   </div>
+	  </div>
+	  
+	  </li>
+	  <li class="noti_p1">
+	  <div class="noti_i p-2  row m-0">
+	   <div class="col-sm-3">
+	    <div class="noti_il">
+		  <a href="#"><img src="img/8.jpg" alt="abc" class="rounded-circle w-100"></a>
+		</div>
+	   </div>
+	   <div class="col-sm-9 p-0">
+	    <div class="noti_ir">
+		  <p class="mb-0">Caleb Flakelar commented on Admin
+                                                <small class="text-muted font-13">1 min ago</small>
+          </p>
+		</div>
+	   </div>
+	  </div>
+	  
+	  </li>
+	  <li class="noti_p1 border-0">
+	  <div class="noti_i p-2  row m-0">
+	   <div class="col-sm-3">
+	    <div class="noti_il">
+		  <a href="#"><img src="img/9.jpg" alt="abc" class="rounded-circle w-100"></a>
+		</div>
+	   </div>
+	   <div class="col-sm-9 p-0">
+	    <div class="noti_ir">
+		  <p class="mb-0">Caleb Flakelar commented on Admin
+                                                <small class="text-muted font-13">1 min ago</small>
+          </p>
+		</div>
+	   </div>
+	  </div>
+	  
+	  </li>
+    </ul>
+  </li>
+  <li class="nav-item sign_box dropdown">
+    <a class="nav-link dropdown-toggle text-white  border-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img alt="abc" class="rounded-circle" width="30"height="30" src="img/1.jpg">Eget Nulla</a>
+      <ul class="dropdown-menu drop_2" style="left:auto; right:0; min-width:200px;">
+	  <li class="small" style="padding: 0.25rem 1rem;">Welcome !</li>
+      <li><a class="dropdown-item" href="#"><i class="fa fa-user"></i> My Account</a></li>
+      <li><a class="dropdown-item" href="#"><i class="fa fa-gear"></i> Settings</a></li>
+      <li><a class="dropdown-item" href="#"><i class="fa fa-life-bouy"></i> Support</a></li>
+      <li><a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Lock Screen</a></li>
+	  <li><a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+    </ul>
+  </li>
+</ul>
+</header>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse" style="overflow-y: auto; max-height:inherit;">
+      <div class="position-sticky">
+      
+        <ul class="nav flex-column mb-2 list-unstyled ps-0">
+	  <li class="nav-item">
+        <a href="index.html" class="btn btn-toggle align-items-center rounded w-100 tag_m  no_drop"><i class="fa fa-dashboard icon-before"></i><span class="btn">Dashboard</span></a>
+        
+      </li>
+      
+      <li class="nav-item">
+        
+        <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed  w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false"><i class="fa fa-shopping-cart icon-before"></i><span class="btn">Ecommerce</span><i class="fa fa-chevron-right"></i></a>
+        <div class="collapse" id="orders-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="ecommerce_prod.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Product</span></a></li>
+            <li><a href="ecommerce_prod_details.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Product Details</span></a></li>
+            <li><a href="ecommerce_orders.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Order</span></a></li>
+            <li><a href="ecommerce_orders_detail.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Order Details</span></a></li>
+			 <li><a href="ecommerce_customers.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Customers</span></a></li>
+            <li><a href="ecommerce_sellers.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Sellers</span></a></li>
+			
+			<li><a href="cart.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Shopping Cart</span></a></li>
+			
+			<li><a href="checkout.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Checkout</span></a></li>
+			
+			<li><a href="billing.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Billing</span></a></li>
+			
+			<li><a href="invoice.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Invoice</span></a></li>
+			
+			<li><a href="pricing.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Pricing</span></a></li>
+          </ul>
+        </div>
+      </li>
+      
+      <li class="nav-item">
+       
+        <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false"><i class="fa fa-briefcase icon-before"></i><span class="btn">Projects</span><i class="fa fa-chevron-right"></i></a>
+        <div class="collapse" id="account-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="project_list.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Lists</span></a></li>
+            <li><a href="project_list_detail.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Details</span></a></li>
+            <li><a href="create_project.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Create Project</span></a></li>
+			  
+          </ul>
+        </div>
+      </li>
+	  
+	  <li class="nav-item">
+       
+        <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#Authent-collapse" aria-expanded="false"><i class="fa fa-lock icon-before"></i><span class="btn">Authentication</span><i class="fa fa-chevron-right"></i></a>
+        <div class="collapse" id="Authent-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a target="_blank"  href="authent_login.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Login</span></a></li>
+            <li><a target="_blank"  href="authent_logout.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Logout</span></a></li>
+            <li><a target="_blank"  href="authent_register.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Register</span></a></li>
+			
+			<li><a target="_blank"  href="authent_forgot.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Forgot Password</span></a></li>
+			
+			<li><a target="_blank"  href="authent_confirm_mail.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Confirm Mail</span></a></li>
+			
+			<li><a target="_blank"  href="authent_reset_pass.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Reset Password</span></a></li>
+			
+			<li><a target="_blank"  href="authent_error.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Error</span></a></li>
+			
+			<li><a target="_blank"  href="authent_card_login.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Card Login</span></a></li>
+			
+			<li><a target="_blank"  href="authent_card_logout.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Card Logout</span></a></li>
+			
+			<li><a target="_blank"  href="authent_card_register.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Card Register</span></a></li>
+			
+			<li><a target="_blank"  href="authent_card_forgot.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Card Forgot</span></a></li>
+			
+			<li><a target="_blank"  href="authent_card_confirm_mail.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Card Confirm Mail</span></a></li>
+			
+			<li><a target="_blank"  href="authent_card_reset_pass.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Card Reset Pass</span></a></li>
+          </ul>
+        </div>
+      </li>
+	  
+	  <li class="nav-item">
+       
+        <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#pages-collapse" aria-expanded="false"><i class="fa fa-copy icon-before"></i><span class="btn">Pages</span><i class="fa fa-chevron-right"></i></a>
+        <div class="collapse" id="pages-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+		    <li><a  href="profile.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Profile</span></a></li>
+		    <li><a target="_blank" href="authen_login.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Login</span></a></li>
+		     <li><a target="_blank" href="login2.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Login 2</span></a></li>
+            <li><a target="_blank" href="error.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Error</span></a></li>
+            <li><a target="_blank" href="authen_register.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Register</span></a></li>
+			<li><a target="_blank" href="authen_logout.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Logout</span></a></li>
+            <li><a target="_blank" href="authen_recover.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Recover Password</span> </a></li>
+            <li><a target="_blank" href="authen_lock_screen.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Lock Screen</span></a></li>
+            <li><a target="_blank" href="authen_confirm_mail.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Confirm Mail</span> </a></li>
+
+          </ul>
+        </div>
+      </li>
+	  
+	  
+	  <li class="nav-item">
+       
+        <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#base-collapse" aria-expanded="false"><i class="fa fa-diamond icon-before"></i><span class="btn">Base UI</span><i class="fa fa-chevron-right"></i></a>
+        <div class="collapse" id="base-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="base_accordions.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Accordions</span></a></li>
+            <li><a href="base_alerts.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Alerts</span></a></li>
+            <li><a href="base_badges.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Badges</span> </a></li>
+            <li><a href="base_breadcrumb.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Breadcrumb</span></a></li>
+            <li><a href="base_buttons.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Buttons</span> </a></li>
+			<li><a href="base_card.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Cards</span></a></li>
+            <li><a href="base_carousel.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Carousel</span></a></li>
+			<li><a href="base_dropdown.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Dropdowns</span></a></li>
+            <li><a href="base_grid.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Grid</span></a></li>
+            <li><a href="base_listgroup.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> List Group</span> </a></li>
+			<li><a href="base_modals.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Modals</span></a></li>
+            <li><a href="base_notifi.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Notifications</span></a></li>
+			<li><a href="base_offcanvas.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Offcanvas</span></a></li>
+            <li><a href="base_placeh.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Placeholders</span> </a></li>
+            <li><a href="base_pagination.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Pagination</span></a></li>
+			<li><a href="base_progress.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Progress</span></a></li>
+			<li><a href="base_spinners.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Spinners</span></a></li>
+            <li><a href="base_tabs.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Tabs</span> </a></li>
+            <li><a href="base_tooltips.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Tooltips</span></a></li>
+            <li><a href="base_typo.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Typography </span></a></li>
+          </ul>
+        </div>
+      </li>
+	  
+	  <li class="nav-item">
+       
+        <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m active_tab" data-bs-toggle="collapse" data-bs-target="#Forms-collapse" aria-expanded="true"><i class="fa fa-file icon-before"></i><span class="btn">Forms</span><i class="fa fa-chevron-right"></i></a>
+        <div class="collapse show" id="Forms-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="form_basic.html" class="link-dark rounded w-100 active_tab"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Basic Elements</span></a></li>
+			<li><a href="form_validation.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Validation</span></a></li>
+            <li><a href="form_wizard.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Wizard</span></a></li>
+			<li><a href="form.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>Wordpress  Form</span></a></li>
+			<li><a href="list.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>Wordpress List</span></a></li>
+          </ul>
+        </div>
+      </li>
+	  
+	  <li class="nav-item">
+       
+        <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#table-collapse" aria-expanded="false"><i class="fa fa-table icon-before"></i><span class="btn">Table</span><i class="fa fa-chevron-right"></i></a>
+        <div class="collapse" id="table-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="table_basic.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Basic Table</span></a></li>
+			<li><a href="table_tow.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Tow Table</span></a></li>
+          </ul>
+        </div>
+      </li>
+	  
+	  <li class="nav-item">
+        <a href="chat.html" class="btn btn-toggle align-items-center rounded w-100 tag_m  no_drop"><i class="fa fa-comment-o icon-before"></i><span class="btn">Chat</span></a>
+      </li>
+	  
+	  <li class="nav-item">
+        <a href="chart_chartjs.html" class="btn btn-toggle align-items-center rounded w-100 tag_m  no_drop"><i class="fa fa-bar-chart icon-before"></i><span class="btn">Charts</span></a>
+      </li>
+	  
+	  <li class="nav-item">
+        <a href="email.html" class="btn btn-toggle align-items-center rounded w-100 tag_m  no_drop"><i class="fa fa-envelope icon-before"></i><span class="btn">Email</span></a>
+      </li>
+    </ul>
+    
+    
+      <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span>Saved reports</span>
+          <a class="link-secondary" href="#" aria-label="Add a new report">
+            <svg xmlns="#" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+          </a>
+        </h6>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link text-muted" href="#">
+              <svg xmlns="#" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              Integrations
+            </a>
+          </li>
+        </ul>
+        
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto common col-lg-10 px-md-4">
+        <div class="row crm_1">
+	   <div class="col-md-3">
+	    <div class="analytic_1l">
+		 <h5 class="mb-0">Form Elements</h5>
+		</div>
+	   </div>
+	   <div class="col-md-9">
+	    <div class="crm_1r pull-right">
+	      <ul>
+		   <li class="col_3 d-inline-block"><a href="#">Lorem</a> <i style="margin-left:5px; vertical-align:middle;" class="fa fa-chevron-right"></i></li>
+		   <li class="col_3 d-inline-block"><a href="#">Base UI</a> <i style="margin-left:5px; vertical-align:middle;" class="fa fa-chevron-right"></i></li>
+		   <li class="col_3 d-inline-block">Form Elements</li>
+		  </ul>
+		</div>
+	   </div>
+	  </div>
+        
+        <div class="row base_formb mt-2">
+	    <div class="col-md-12">
+		   <div class="card">
+          <div class="card-header">
+             <h5>INPUT TYPES</h5>
+          </div>
+          <div class="card-body">
+	        <p>Most common form control, text-based input fields. Includes support for all HTML5 types: text, password, datetime, datetime-local, date, month, time, week, number, email, url, search, tel, and color.</p>
+			  <ul class="nav nav-tabs mb-3" style="list-style:none;">
+			<li class="nav-item">
+			<a href="#preview117" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code117" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview117">
+               <div class="row base_formbi">
+			   <div class="col-md-6">
+			    <div class="base_formbil">
+				 <div class="mb-3">
+    <label for="simpleinput" class="form-label">Text</label>
+    <input type="text" id="simpleinput" class="form-control">
+</div>
+                 <div class="mb-3">
+    <label for="example-email" class="form-label">Email</label>
+    <input type="email" id="example-email" name="example-email" class="form-control" placeholder="Email">
+</div>
+                 <div class="mb-3">
+    <label for="example-password" class="form-label">Password</label>
+    <input type="password" id="example-password" class="form-control" value="password">
+</div>
+                 <div class="mb-3">
+    <label for="password" class="form-label">Show/Hide Password</label>
+    <div class="input-group input-group-merge">
+        <input type="password" id="password" class="form-control" placeholder="Enter your password">
+        <div class="input-group-text" data-password="false">
+            <span class="fa fa-eye"></span>
+        </div>
+    </div>
+</div>
+                 <div class="mb-3">
+    <label for="example-palaceholder" class="form-label">Placeholder</label>
+    <input type="text" id="example-palaceholder" class="form-control" placeholder="placeholder">
+</div>
+
+				<div class="mb-3">
+					<label for="example-textarea" class="form-label">Text area</label>
+					<textarea class="form-control" id="example-textarea" rows="5"></textarea>
+				</div>
+				<div class="mb-3">
+    <label for="example-readonly" class="form-label">Readonly</label>
+    <input type="text" id="example-readonly" class="form-control" readonly="" value="Readonly value">
+</div>
+
+				<div class="mb-3">
+					<label for="example-disable" class="form-label">Disabled</label>
+					<input type="text" class="form-control" id="example-disable" disabled="" value="Disabled value">
+				</div>
+				
+				<div class="mb-3">
+					<label for="example-static" class="form-label">Static control</label>
+					<input type="text" readonly class="form-control-plaintext" id="example-static" value="email@example.com">
+				</div>
+				<div class="mb-3">
+    <label for="example-helping" class="form-label">Helping text</label>
+    <input type="text" id="example-helping" class="form-control" placeholder="Helping text">
+    <span class="help-block"><small>A block of help text that breaks onto a new line and may extend beyond one line.</small></span>
+</div>
+				</div>
+			   </div>
+			   <div class="col-md-6">
+			    <div class="base_formbil">
+			    <div class="mb-3">
+    <label for="example-select" class="form-label">Input Select</label>
+    <select class="form-select" id="example-select">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
+</div>
+
+<div class="mb-3">
+    <label for="example-multiselect" class="form-label">Multiple Select</label>
+    <select id="example-multiselect" multiple class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
+</div>
+
+<div class="mb-3">
+    <label for="example-fileinput" class="form-label">Default file input</label>
+    <input type="file" id="example-fileinput" class="form-control">
+</div>
+
+<div class="mb-3">
+    <label for="example-date" class="form-label">Date</label>
+    <input class="form-control" id="example-date" type="date" name="date">
+</div>
+
+<div class="mb-3">
+    <label for="example-month" class="form-label">Month</label>
+    <input class="form-control" id="example-month" type="month" name="month">
+</div>
+
+<div class="mb-3">
+    <label for="example-time" class="form-label">Time</label>
+    <input class="form-control" id="example-time" type="time" name="time">
+</div>
+
+<div class="mb-3">
+    <label for="example-week" class="form-label">Week</label>
+    <input class="form-control" id="example-week" type="week" name="week">
+</div>
+
+<div class="mb-3">
+    <label for="example-number" class="form-label">Number</label>
+    <input class="form-control" id="example-number" type="number" name="number">
+</div>
+
+<div class="mb-3">
+    <label for="example-color" class="form-label">Color</label>
+    <input class="form-control" id="example-color" type="color" name="color" value="#727cf5">
+</div>
+
+<div class="mb-0">
+    <label for="example-range" class="form-label">Range</label>
+    <input class="form-range" id="example-range" type="range" name="range" min="0" max="100">
+</div>
+				</div>
+			   </div>
+			  </div>
+			</div>
+			<div class="tab-pane" id="code117">
+			<pre class="brush: html;">
+				<div class="row base_formbi">
+					<div class="col-md-6">
+						<div class="base_formbil">
+							<div class="mb-3">
+								<label for="simpleinput" class="form-label">Text</label>
+								<input type="text" id="simpleinput" class="form-control">
+							</div>
+							<div class="mb-3">
+								<label for="example-email" class="form-label">Email</label>
+								<input type="email" id="example-email" name="example-email" class="form-control" placeholder="Email">
+							</div>
+							<div class="mb-3">
+								<label for="example-password" class="form-label">Password</label>
+								<input type="password" id="example-password" class="form-control" value="password">
+							</div>
+							<div class="mb-3">
+								<label for="password" class="form-label">Show/Hide Password</label>
+								<div class="input-group input-group-merge">
+									<input type="password" id="password" class="form-control" placeholder="Enter your password">
+									<div class="input-group-text" data-password="false">
+									  <span class="fa fa-eye"></span>
+									</div>
+								</div>
+							</div>
+							<div class="mb-3">
+								<label for="example-palaceholder" class="form-label">Placeholder</label>
+								<input type="text" id="example-palaceholder" class="form-control" placeholder="placeholder">
+							</div>
+							
+							<div class="mb-3">
+								<label for="example-textarea" class="form-label">Text area</label>
+								<textarea class="form-control" id="example-textarea" rows="5"></textarea>
+							</div>
+							<div class="mb-3">
+								<label for="example-readonly" class="form-label">Readonly</label>
+								<input type="text" id="example-readonly" class="form-control" readonly="" value="Readonly value">
+							</div>
+							
+							<div class="mb-3">
+								<label for="example-disable" class="form-label">Disabled</label>
+								<input type="text" class="form-control" id="example-disable" disabled="" value="Disabled value">
+							</div>
+							
+							<div class="mb-3">
+								<label for="example-static" class="form-label">Static control</label>
+								<input type="text" readonly class="form-control-plaintext" id="example-static" value="email@example.com">
+							</div>
+							<div class="mb-3">
+								<label for="example-helping" class="form-label">Helping text</label>
+								<input type="text" id="example-helping" class="form-control" placeholder="Helping text">
+								<span class="help-block"><small>A block of help text that breaks onto a new line and may extend beyond one line.</small></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="base_formbil">
+							<div class="mb-3">
+								<label for="example-select" class="form-label">Input Select</label>
+								<select class="form-select" id="example-select">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+							
+							<div class="mb-3">
+								<label for="example-multiselect" class="form-label">Multiple Select</label>
+								<select id="example-multiselect" multiple class="form-control">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+							
+							<div class="mb-3">
+								<label for="example-fileinput" class="form-label">Default file input</label>
+								<input type="file" id="example-fileinput" class="form-control">
+							</div>
+							
+							<div class="mb-3">
+								<label for="example-date" class="form-label">Date</label>
+								<input class="form-control" id="example-date" type="date" name="date">
+							</div>
+							
+							<div class="mb-3">
+								<label for="example-month" class="form-label">Month</label>
+								<input class="form-control" id="example-month" type="month" name="month">
+							</div>
+							
+							<div class="mb-3">
+								<label for="example-time" class="form-label">Time</label>
+								<input class="form-control" id="example-time" type="time" name="time">
+							</div>
+							
+							<div class="mb-3">
+								<label for="example-week" class="form-label">Week</label>
+								<input class="form-control" id="example-week" type="week" name="week">
+							</div>
+							
+							<div class="mb-3">
+								<label for="example-number" class="form-label">Number</label>
+								<input class="form-control" id="example-number" type="number" name="number">
+							</div>
+							
+							<div class="mb-3">
+								<label for="example-color" class="form-label">Color</label>
+								<input class="form-control" id="example-color" type="color" name="color" value="#727cf5">
+							</div>
+							
+							<div class="mb-0">
+								<label for="example-range" class="form-label">Range</label>
+								<input class="form-range" id="example-range" type="range" name="range" min="0" max="100">
+							</div>
+						</div>
+					</div>
+				</div>
+			</pre>
+			</div>
+			</div> 
+          </div>
+      </div>
+		   
+		</div>
+		 
+	   </div>
+	   
+	    <div class="row base_formb mt-4">
+	    <div class="col-md-12">
+		  <div class="card">
+          <div class="card-header">
+            <h5>FLOATING LABELS</h5>
+          </div>
+          <div class="card-body">
+	       	  <p>Most common form control, text-based input fields. Includes support for all HTML5 types: text, password, datetime, datetime-local, date, month, time, week, number, email, url, search, tel, and color.</p>
+			  <ul class="nav nav-tabs mb-3" style="list-style:none;">
+			<li class="nav-item">
+			<a href="#preview118" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code118" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview118">
+               <div class="row base_formbi">
+			   <div class="col-md-12 col-xl-6">
+			    <div class="base_formbil">
+				<div class="form-floating mb-3">
+				<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+				<label for="floatingInput">Email address</label>
+				</div>
+				
+				<div class="form-floating">
+				<input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
+				<label for="floatingPassword">Password</label>
+				</div><br>
+				
+				<div class="form-floating">
+				<textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px;"></textarea>
+				<label for="floatingTextarea">Comments</label>
+				</div>
+				</div>
+			   </div>
+			   <div class="col-md-12 col-xl-6">
+			    <div class="base_formbil">
+				   <div class="form-floating">
+    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+    </select>
+    <label for="floatingSelect">Works with selects</label>
+</div><br>
+
+					<div class="row g-2">
+						<div class="col-md">
+							<div class="form-floating">
+								<input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="mdo@example.com" />
+								<label for="floatingInputGrid">Email address</label>
+							</div>
+						</div>
+						<div class="col-md">
+							<div class="form-floating">
+								<select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+									<option selected>Open this select menu</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+								<label for="floatingSelectGrid">Works with selects</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			   </div>
+			  </div>
+			</div>
+			<div class="tab-pane" id="code118">
+			<pre class="brush: html;">
+				<div class="row base_formbi">
+					<div class="col-md-12 col-xl-6">
+						<div class="base_formbil">
+							<div class="form-floating mb-3">
+								<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+								<label for="floatingInput">Email address</label>
+							</div>
+							
+							<div class="form-floating">
+								<input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
+								<label for="floatingPassword">Password</label>
+							</div>
+							
+							<div class="form-floating">
+								<textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px;"></textarea>
+								<label for="floatingTextarea">Comments</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 col-xl-6">
+						<div class="base_formbil">
+							<div class="form-floating">
+								<select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+									<option selected>Open this select menu</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+								<label for="floatingSelect">Works with selects</label>
+							</div>
+							
+							<div class="row g-2">
+								<div class="col-md">
+									<div class="form-floating">
+										<input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="mdo@example.com" />
+										<label for="floatingInputGrid">Email address</label>
+									</div>
+								</div>
+								<div class="col-md">
+									<div class="form-floating">
+										<select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+											<option selected>Open this select menu</option>
+											<option value="1">One</option>
+											<option value="2">Two</option>
+											<option value="3">Three</option>
+										</select>
+										<label for="floatingSelectGrid">Works with selects</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		   
+		</div>
+		 
+	   </div>
+	   
+	    <div class="row  base_formb mt-4">
+	    <div class="col-md-6">
+		  <div class="card">
+          <div class="card-header">
+            <h5>SELECT</h5>
+          </div>
+          <div class="card-body">
+	       	  <p> menus need only a custom class, .form-select to trigger the custom styles.</p>
+		  <ul class="nav nav-tabs mb-3" style="list-style:none;">
+			<li class="nav-item">
+			<a href="#preview119" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code119" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview119">
+               <select class="form-select mb-3">
+					<option selected>Open this select menu</option>
+					<option value="1">One</option>
+					<option value="2">Two</option>
+					<option value="3">Three</option>
+					</select>     
+					<select class="form-select form-select-lg mb-3">
+					<option selected>Open this select menu</option>
+					<option value="1">One</option>
+					<option value="2">Two</option>
+					<option value="3">Three</option>
+					</select>
+					<select class="form-select form-select-sm mb-3">
+					<option selected>Open this select menu</option>
+					<option value="1">One</option>
+					<option value="2">Two</option>
+					<option value="3">Three</option>
+					</select> 
+					<div class="input-group mb-3">
+					<label class="input-group-text" for="inputGroupSelect01">Options</label>
+					<select class="form-select" id="inputGroupSelect01">
+					<option selected>Choose...</option>
+					<option value="1">One</option>
+					<option value="2">Two</option>
+					<option value="3">Three</option>
+					</select>
+					</div>   
+					<div class="input-group">
+					<select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+					<option selected>Choose...</option>
+					<option value="1">One</option>
+					<option value="2">Two</option>
+					<option value="3">Three</option>
+					</select>
+					<button class="btn btn-outline-secondary" type="button">Button</button>
+					</div>
+			</div>
+			<div class="tab-pane" id="code119">
+			<pre class="brush: html;">
+				<select class="form-select mb-3">
+					<option selected>Open this select menu</option>
+					<option value="1">One</option>
+					<option value="2">Two</option>
+					<option value="3">Three</option>
+				</select>     
+				<select class="form-select form-select-lg mb-3">
+					<option selected>Open this select menu</option>
+					<option value="1">One</option>
+					<option value="2">Two</option>
+					<option value="3">Three</option>
+				</select>
+				<select class="form-select form-select-sm mb-3">
+					<option selected>Open this select menu</option>
+					<option value="1">One</option>
+					<option value="2">Two</option>
+					<option value="3">Three</option>
+				</select> 
+				<div class="input-group mb-3">
+					<label class="input-group-text" for="inputGroupSelect01">Options</label>
+					<select class="form-select" id="inputGroupSelect01">
+						<option selected>Choose...</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+				</select>
+				</div>   
+				<div class="input-group">
+					<select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+						<option selected>Choose...</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					</select>
+					<button class="btn btn-outline-secondary" type="button">Button</button>
+				</div>
+			</pre>
+			</div>
+			</div> 
+          </div>
+      </div>
+		  
+		</div>
+		<div class="col-md-6">
+		  <div class="card">
+          <div class="card-header">
+            <h5>SWITCHES</h5>
+          </div>
+          <div class="card-body">
+	         <p>A switch has the markup of a custom checkbox but uses the .form-switch class to render a toggle switch. Switches also support the disabled attribute.</p>
+		  <ul class="nav nav-tabs mb-3" style="list-style:none;">
+			<li class="nav-item">
+			<a href="#preview120" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code120" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview120">
+				<!-- Custom Switch -->
+				<div class="form-check form-switch">
+				<input type="checkbox" class="form-check-input" id="customSwitch1">
+				<label class="form-check-label" for="customSwitch1">Toggle this switch element</label>
+				</div>
+				
+				<!-- Custom Switch Disabled -->
+				<div class="form-check form-switch">
+				<input type="checkbox" class="form-check-input" disabled id="customSwitch2">
+				<label class="form-check-label" for="customSwitch2">Disabled switch element</label>
+				</div>
+			</div>
+			<div class="tab-pane" id="code120">
+			<pre class="brush: html;">
+				<!-- Custom Switch -->
+				<div class="form-check form-switch">
+					<input type="checkbox" class="form-check-input" id="customSwitch1">
+					<label class="form-check-label" for="customSwitch1">Toggle this switch element</label>
+				</div>
+				
+				<!-- Custom Switch Disabled -->
+				<div class="form-check form-switch">
+					<input type="checkbox" class="form-check-input" disabled id="customSwitch2">
+					<label class="form-check-label" for="customSwitch2">Disabled switch element</label>
+				</div>
+
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		  
+		</div>
+	   </div>
+	   
+	    <div class="row  base_formb mt-4">
+	    <div class="col-md-6">
+		   <div class="card">
+          <div class="card-header">
+            <h5>CHECKBOXES</h5>
+          </div>
+          <div class="card-body">
+	         		  
+		  <p> Each checkbox and radio input and label pairing is wrapped in a div to create our custom control. Structurally, this is the same approach as our default .form-check.</p>
+		  <ul class="nav nav-tabs mb-3" style="list-style:none;">
+			<li class="nav-item">
+			<a href="#preview121" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code121" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview121">
+			            <!-- Checkboxes--> 
+<div class="mt-3">
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="customCheck1">
+        <label class="form-check-label" for="customCheck1">Check this custom checkbox</label>
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="customCheck2">
+        <label class="form-check-label" for="customCheck2">Check this custom checkbox</label>
+    </div>
+</div>
+<!-- Inline--> 
+
+<div class="mt-2">
+    <div class="form-check form-check-inline">
+        <input type="checkbox" class="form-check-input" id="customCheck3">
+        <label class="form-check-label" for="customCheck3">Check this custom checkbox</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input type="checkbox" class="form-check-input" id="customCheck4">
+        <label class="form-check-label" for="customCheck4">Check this custom checkbox</label>
+    </div>
+</div>
+
+<!-- Disabled-->
+
+<div class="mt-2">
+    <div class="form-check form-check-inline">
+        <input type="checkbox" class="form-check-input" id="customCheck5" checked disabled>
+        <label class="form-check-label" for="customCheck5">Check this custom checkbox</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input type="checkbox" class="form-check-input" id="customCheck6" disabled>
+        <label class="form-check-label" for="customCheck6">Check this custom checkbox</label>
+    </div>
+</div>
+			</div>
+			<div class="tab-pane" id="code121">
+			<pre class="brush: html;">
+				<!-- Checkboxes--> 
+				<div class="mt-3">
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="customCheck1">
+						<label class="form-check-label" for="customCheck1">Check this custom checkbox</label>
+					</div>
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="customCheck2">
+						<label class="form-check-label" for="customCheck2">Check this custom checkbox</label>
+					</div>
+				</div>
+				<!-- Inline--> 
+				
+				<div class="mt-2">
+					<div class="form-check form-check-inline">
+						<input type="checkbox" class="form-check-input" id="customCheck3">
+						<label class="form-check-label" for="customCheck3">Check this custom checkbox</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input type="checkbox" class="form-check-input" id="customCheck4">
+						<label class="form-check-label" for="customCheck4">Check this custom checkbox</label>
+					</div>
+				</div>
+				
+				<!-- Disabled-->
+				
+				<div class="mt-2">
+					<div class="form-check form-check-inline">
+						<input type="checkbox" class="form-check-input" id="customCheck5" checked disabled>
+						<label class="form-check-label" for="customCheck5">Check this custom checkbox</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input type="checkbox" class="form-check-input" id="customCheck6" disabled>
+						<label class="form-check-label" for="customCheck6">Check this custom checkbox</label>
+					</div>
+				</div>
+
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		  
+		</div>
+		<div class="col-md-6">
+		  <div class="card">
+          <div class="card-header">
+           <h5>RADIOS</h5>
+          </div>
+          <div class="card-body">
+	           
+		  <p> Each checkbox and radio input and label pairing is wrapped in a div to create our custom control. Structurally, this is the same approach as our default .form-check.</p>
+		  <ul class="nav nav-tabs mb-3" style="list-style:none;">
+			<li class="nav-item">
+			<a href="#preview122" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code122" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview122">
+           <!-- Radios--> 
+
+<div class="mt-3">
+    <div class="form-check">
+        <input type="radio" id="customRadio1" name="customRadio" class="form-check-input">
+        <label class="form-check-label" for="customRadio1">Toggle this custom radio</label>
+    </div>
+    <div class="form-check">
+        <input type="radio" id="customRadio2" name="customRadio" class="form-check-input">
+        <label class="form-check-label" for="customRadio2">Or toggle this other custom radio</label>
+    </div>
+</div> 
+
+<!-- Inline-->
+
+<div class="mt-2">
+    <div class="form-check form-check-inline">
+        <input type="radio" id="customRadio3" name="customRadio1" class="form-check-input">
+        <label class="form-check-label" for="customRadio3">Toggle this custom radio</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input type="radio" id="customRadio4" name="customRadio1" class="form-check-input">
+        <label class="form-check-label" for="customRadio4">Or toggle this other custom radio</label>
+    </div>
+</div>
+
+<!-- Disabled--> 
+
+<div class="mt-2">
+    <div class="form-check form-check-inline">
+        <input type="radio" id="customRadio5" name="customRadio2" class="form-check-input" disabled>
+        <label class="form-check-label" for="customRadio5">Toggle this custom radio</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input type="radio" id="customRadio6" name="customRadio2" class="form-check-input" checked disabled>
+        <label class="form-check-label" for="customRadio6">Or toggle this other custom radio</label>
+    </div>
+</div>
+			</div>
+			<div class="tab-pane" id="code122">
+			<pre class="brush: html;">
+				<!-- Radios--> 
+				
+				<div class="mt-3">
+					<div class="form-check">
+						<input type="radio" id="customRadio1" name="customRadio" class="form-check-input">
+						<label class="form-check-label" for="customRadio1">Toggle this custom radio</label>
+					</div>
+					<div class="form-check">
+						<input type="radio" id="customRadio2" name="customRadio" class="form-check-input">
+						<label class="form-check-label" for="customRadio2">Or toggle this other custom radio</label>
+					</div>
+				</div> 
+				
+				<!-- Inline-->
+				
+				<div class="mt-2">
+					<div class="form-check form-check-inline">
+						<input type="radio" id="customRadio3" name="customRadio1" class="form-check-input">
+						<label class="form-check-label" for="customRadio3">Toggle this custom radio</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input type="radio" id="customRadio4" name="customRadio1" class="form-check-input">
+						<label class="form-check-label" for="customRadio4">Or toggle this other custom radio</label>
+					</div>
+				</div>
+				
+				<!-- Disabled--> 
+				
+				<div class="mt-2">
+					<div class="form-check form-check-inline">
+						<input type="radio" id="customRadio5" name="customRadio2" class="form-check-input" disabled>
+						<label class="form-check-label" for="customRadio5">Toggle this custom radio</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input type="radio" id="customRadio6" name="customRadio2" class="form-check-input" checked disabled>
+						<label class="form-check-label" for="customRadio6">Or toggle this other custom radio</label>
+					</div>
+				</div>
+
+			</pre>
+			</div>
+			</div>		  
+		
+          </div>
+      </div>
+		  
+		</div>
+		
+	   </div>
+	   
+	   <div class="row  base_formb mt-4">
+	    <div class="col-lg-6 col-md-12">
+		  <div class="card">
+          <div class="card-header">
+             <h5>INPUT SIZES</h5>
+          </div>
+          <div class="card-body">
+           <p> Set heights using classes like .input-lg, and set widths using grid column classes like .col-lg-*.</p>
+		  <ul class="nav nav-tabs mb-3" style="list-style:none;">
+			<li class="nav-item">
+			<a href="#preview123" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code123" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview123">
+              	  <div class="mb-3">
+    <label for="example-input-small" class="form-label">Small</label>
+    <input type="text" id="example-input-small" name="example-input-small" class="form-control form-control-sm" placeholder=".input-sm">
+</div>
+
+<div class="mb-3">
+    <label for="example-input-normal" class="form-label">Normal</label>
+    <input type="text" id="example-input-normal" name="example-input-normal" class="form-control" placeholder="Normal">
+</div>
+
+<div class="mb-3">
+    <label for="example-input-large" class="form-label">Large</label>
+    <input type="text" id="example-input-large" name="example-input-large" class="form-control form-control-lg" placeholder=".input-lg">
+</div>
+
+<div class="mb-2">
+    <label for="example-gridsize" class="form-label">Grid Sizes</label>
+    <div class="row">
+        <div class="col-sm-4">
+            <input type="text" id="example-gridsize" class="form-control" placeholder=".col-sm-4">
+        </div>
+    </div>
+</div>
+			</div>
+			<div class="tab-pane" id="code123">
+			<pre class="brush: html;">
+
+				<div class="mb-3">
+					<label for="example-input-small" class="form-label">Small</label>
+					<input type="text" id="example-input-small" name="example-input-small" class="form-control form-control-sm" placeholder=".input-sm">
+				</div>
+				
+				<div class="mb-3">
+					<label for="example-input-normal" class="form-label">Normal</label>
+					<input type="text" id="example-input-normal" name="example-input-normal" class="form-control" placeholder="Normal">
+				</div>
+				
+				<div class="mb-3">
+					<label for="example-input-large" class="form-label">Large</label>
+					<input type="text" id="example-input-large" name="example-input-large" class="form-control form-control-lg" placeholder=".input-lg">
+				</div>
+				
+				<div class="mb-2">
+					<label for="example-gridsize" class="form-label">Grid Sizes</label>
+					<div class="row">
+						<div class="col-sm-4">
+							<input type="text" id="example-gridsize" class="form-control" placeholder=".col-sm-4">
+						</div>
+					</div>
+				</div>
+			</pre>
+			</div>
+			</div>		  	  
+		
+          </div>
+      </div>
+		  
+		</div>
+		<div class="col-lg-6 col-md-12">
+		  <div class="card">
+          <div class="card-header">
+            <h5>INPUT GROUP</h5>
+          </div>
+          <div class="card-body">
+          	   <p> Easily extend form controls by adding text, buttons, or button groups on either side of textual inputs, custom selects, and custom file inputs</p>
+		  <ul class="nav nav-tabs mb-3" style="list-style:none;">
+			<li class="nav-item">
+			<a href="#preview124" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code124" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview124">
+              <form>
+    <div class="mb-3">
+        <label class="form-label">Static</label>
+        <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="basic-addon1">@</span>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+    </div>
+                
+    <div class="mb-3">
+        <label class="form-label">Dropdowns</label>
+        <div class="input-group">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+            <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+        </div>
+    </div>
+                
+    <div class="mb-3">
+        <label class="form-label">Buttons</label>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username">
+            <button class="btn btn-dark" type="button">Button</button>
+        </div>
+    </div>
+                
+    <div class="row g-2">
+        <div class="col-sm-6">
+            <label class="form-label">File input</label>
+            <input class="form-control" type="file" id="inputGroupFile04">
+        </div>
+        <div class="col-sm-6">
+            <label for="formFileMultiple" class="form-label">Multiple files input</label>
+            <input class="form-control" type="file" id="formFileMultiple" multiple>
+        </div>
+    </div>
+</form>
+			</div>
+			<div class="tab-pane" id="code124">
+			<pre class="brush: html;">
+				<form>
+					<div class="mb-3">
+						<label class="form-label">Static</label>
+						<div class="input-group flex-nowrap">
+							<span class="input-group-text" id="basic-addon1">@</span>
+							<input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+						</div>
+					</div>
+					
+					<div class="mb-3">
+						<label class="form-label">Dropdowns</label>
+						<div class="input-group">
+							<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+							<input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+						</div>
+					</div>
+					
+					<div class="mb-3">
+						<label class="form-label">Buttons</label>
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username">
+							<button class="btn btn-dark" type="button">Button</button>
+						</div>
+					</div>
+					
+					<div class="row g-2">
+						<div class="col-sm-6">
+							<label class="form-label">File input</label>
+							<input class="form-control" type="file" id="inputGroupFile04">
+						</div>
+						<div class="col-sm-6">
+							<label for="formFileMultiple" class="form-label">Multiple files input</label>
+							<input class="form-control" type="file" id="formFileMultiple" multiple>
+						</div>
+					</div>
+				</form>
+			</pre>
+			</div>
+			</div> 	  
+		
+          </div>
+      </div>
+		  
+		</div>
+		
+	   </div>
+	   
+	   <div class="row  base_formb mt-4">
+	    <div class="col-lg-6" col-md-12>
+		  <div class="card">
+          <div class="card-header">
+           <h5>BASIC EXAMPLE</h5>
+          </div>
+          <div class="card-body">
+          	   <p> Here’s a quick example to demonstrate Bootstrap’s form styles. Keep reading for documentation on required classes, form layout, and more.</p>
+		  <ul class="nav nav-tabs mb-3" style="list-style:none;">
+			<li class="nav-item">
+			<a href="#preview125" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code125" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview125">
+              <form>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <div class="mb-3">
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="checkmeout0">
+            <label class="form-check-label" for="checkmeout0">Check me out !</label>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+			</div>
+			<div class="tab-pane" id="code125">
+			<pre class="brush: html;">
+				<form>
+					<div class="mb-3">
+						<label for="exampleInputEmail1" class="form-label">Email address</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+						<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+					</div>
+					<div class="mb-3">
+						<label for="exampleInputPassword1" class="form-label">Password</label>
+						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+					</div>
+					<div class="mb-3">
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input" id="checkmeout0">
+							<label class="form-check-label" for="checkmeout0">Check me out !</label>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</pre>
+			</div>
+			</div>
+		
+          </div>
+      </div>
+		  
+		</div>
+		<div class="col-lg-6" col-md-12>
+		  <div class="card">
+          <div class="card-header">
+            <h5>HORIZONTAL FORM</h5>
+          </div>
+          <div class="card-body">
+          	 
+		      <p> Create horizontal forms with the grid by adding the .row class to form groups and using the .col-*-* classes to specify the width of your labels and controls. Be sure to add .col-form-label to your label s as well so they’re vertically centered with their associated form controls.</p>
+		  <ul class="nav nav-tabs mb-3" style="list-style:none;">
+			<li class="nav-item">
+			<a href="#preview126" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code126" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview126">
+              <form class="form-horizontal">
+    <div class="row mb-3">
+        <label for="inputEmail3" class="col-3 col-form-label">Email</label>
+        <div class="col-9">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="inputPassword3" class="col-3 col-form-label">Password</label>
+        <div class="col-9">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="inputPassword5" class="col-3 col-form-label">Re Password</label>
+        <div class="col-9">
+            <input type="password" class="form-control" id="inputPassword5" placeholder="Retype Password">
+        </div>
+    </div>
+    <div class="row mb-3 justify-content-end">
+        <div class="col-9">
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="checkmeout">
+                <label class="form-check-label" for="checkmeout">Check me out !</label>
+            </div>
+        </div>
+    </div>
+    <div class="justify-content-end row">
+        <div class="col-9">
+            <button type="submit" class="btn btn-info">Sign in</button>
+        </div>
+    </div>
+</form>
+			</div>
+			<div class="tab-pane" id="code126">
+			<pre class="brush: html;">
+				<form class="form-horizontal">
+					<div class="row mb-3">
+						<label for="inputEmail3" class="col-3 col-form-label">Email</label>
+						<div class="col-9">
+						  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+						</div>
+					</div>
+					<div class="row mb-3">
+						<label for="inputPassword3" class="col-3 col-form-label">Password</label>
+						<div class="col-9">
+						  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+						</div>
+					</div>
+					<div class="row mb-3">
+						<label for="inputPassword5" class="col-3 col-form-label">Re Password</label>
+						<div class="col-9">
+						  <input type="password" class="form-control" id="inputPassword5" placeholder="Retype Password">
+						</div>
+					</div>
+					<div class="row mb-3 justify-content-end">
+						<div class="col-9">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" id="checkmeout">
+								<label class="form-check-label" for="checkmeout">Check me out !</label>
+							</div>
+						</div>
+					</div>
+					<div class="justify-content-end row">
+						<div class="col-9">
+						  <button type="submit" class="btn btn-info">Sign in</button>
+						</div>
+					</div>
+				</form>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		  
+		</div>
+		
+	   </div>
+	   
+	   <div class="row base_formb mt-4">
+	    <div class="col-md-12">
+		   <div class="card">
+          <div class="card-header">
+           <h5>INLINE FORM</h5>
+          </div>
+          <div class="card-body">
+          	 
+		   <p>Use the .row-cols-lg-auto, .g-3 & .align-items-center class to display a series of labels, form controls, and buttons on a single horizontal row. Form controls within inline forms vary slightly from their default states. Controls only appear inline in viewports that are at least 576px wide to account for narrow viewports on mobile devices.</p>
+			  <ul class="nav nav-tabs mb-3" style="list-style:none;">
+			<li class="nav-item">
+			<a href="#preview127" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code127" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview127">
+                <form class="row row-cols-lg-auto g-3 align-items-center">
+    <div class="col-12">
+        <label for="staticEmail2" class="visually-hidden">Email</label>
+        <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+    </div>
+    <div class="col-12">
+        <label for="inputPassword2" class="visually-hidden">Password</label>
+        <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Confirm identity</button>
+    </div>
+</form>
+                    
+<h6 class="font-13 mt-3">Auto-sizing</h6>
+<form>
+    <div class="row gy-2 gx-2 align-items-center">
+        <div class="col-auto">
+            <label class="visually-hidden" for="inlineFormInput">Name</label>
+            <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Jane Doe">
+        </div>
+        <div class="col-auto">
+            <label class="visually-hidden" for="inlineFormInputGroup">Username</label>
+            <div class="input-group mb-2">
+                <div class="input-group-text">@</div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+            </div>
+        </div>
+        <div class="col-auto">
+            <div class="form-check mb-2">
+                <input type="checkbox" class="form-check-input" id="autoSizingCheck">
+                <label class="form-check-label" for="autoSizingCheck">Remember me</label>
+            </div>
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+        </div>
+    </div>
+</form>
+			</div>
+			<div class="tab-pane" id="code127">
+			<pre class="brush: html;">
+				<form class="row row-cols-lg-auto g-3 align-items-center">
+					<div class="col-12">
+						<label for="staticEmail2" class="visually-hidden">Email</label>
+						<input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+					</div>
+					<div class="col-12">
+						<label for="inputPassword2" class="visually-hidden">Password</label>
+						<input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+					</div>
+					<div class="col-12">
+						<button type="submit" class="btn btn-primary">Confirm identity</button>
+					</div>
+				</form>
+				
+				<h6 class="font-13 mt-3">Auto-sizing</h6>
+				<form>
+					<div class="row gy-2 gx-2 align-items-center">
+						<div class="col-auto">
+							<label class="visually-hidden" for="inlineFormInput">Name</label>
+							<input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Jane Doe">
+						</div>
+						<div class="col-auto">
+							<label class="visually-hidden" for="inlineFormInputGroup">Username</label>
+							<div class="input-group mb-2">
+								<div class="input-group-text">@</div>
+								<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+							</div>
+						</div>
+						<div class="col-auto">
+							<div class="form-check mb-2">
+								<input type="checkbox" class="form-check-input" id="autoSizingCheck">
+								<label class="form-check-label" for="autoSizingCheck">Remember me</label>
+							</div>
+						</div>
+						<div class="col-auto">
+							<button type="submit" class="btn btn-primary mb-2">Submit</button>
+						</div>
+					</div>
+				</form>	
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		   
+		</div>
+		 
+	   </div>
+	   
+	   <div class="row base_formb mt-4">
+	    <div class="col-md-12">
+		   <div class="card">
+          <div class="card-header">
+           <h5>HORIZONTAL FORM LABEL SIZING</h5>
+          </div>
+          <div class="card-body">
+             <p>Be sure to use .col-form-label-sm or .col-form-label-lg to your  label s or  legend s to correctly follow the size of .form-control-lg and .form-control-sm.</p>
+			  <ul class="nav nav-tabs mb-3" style="list-style:none;">
+			<li class="nav-item">
+			<a href="#preview128" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code128" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview128">
+              <form>
+    <div class="mb-2 row">
+        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+        <div class="col-sm-10">
+        <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+        </div>
+    </div>
+    <div class="mb-2 row">
+        <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+        <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+        </div>
+    </div>
+    <div class="row">
+        <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+        <div class="col-sm-10">
+        <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg">
+        </div>
+    </div>
+</form>
+			</div>
+			<div class="tab-pane" id="code128">
+			<pre class="brush: html;">
+				<form>
+					<div class="mb-2 row">
+						<label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+						<div class="col-sm-10">
+						  <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+						</div>
+					</div>
+					<div class="mb-2 row">
+						<label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+						<div class="col-sm-10">
+						  <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+						</div>
+					</div>
+					<div class="row">
+						<label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+						<div class="col-sm-10">
+						  <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg">
+						</div>
+					</div>
+				</form>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		   
+		   
+		</div>
+		 
+	   </div>
+	   
+	   <div class="row base_formb mt-4">
+	    <div class="col-md-12">
+		  <div class="card">
+          <div class="card-header">
+            <h5>FORM ROW</h5>
+          </div>
+          <div class="card-body">
+              <p>By adding .row & .g-2, you can have control over the gutter width in as well the inline as block direction.</p>
+			  <ul class="nav nav-tabs mb-3" style="list-style:none;">
+			<li class="nav-item">
+			<a href="#preview129" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code129" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview129">
+              <form>
+    <div class="row g-2">
+        <div class="mb-3 col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+        </div>
+        <div class="mb-3 col-md-6">
+            <label for="inputPassword4" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+        </div>
+    </div>
+                
+    <div class="mb-3">
+        <label for="inputAddress" class="form-label">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    
+    <div class="mb-3">
+        <label for="inputAddress2" class="form-label">Address 2</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div>
+                
+    <div class="row g-2">
+        <div class="mb-3 col-md-6">
+            <label for="inputCity" class="form-label">City</label>
+            <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="mb-3 col-md-4">
+            <label for="inputState" class="form-label">State</label>
+            <select id="inputState" class="form-select">
+                <option>Choose</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select>
+        </div>
+        <div class="mb-3 col-md-2">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+        </div>
+    </div>
+
+    <div class="mb-2">
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="customCheck11">
+            <label class="form-check-label" for="customCheck11">Check this custom checkbox</label>
+        </div>
+    </div>
+                
+    <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+			</div>
+			<div class="tab-pane" id="code129">
+			<pre class="brush: html;">
+				<form>
+					<div class="row g-2">
+						<div class="mb-3 col-md-6">
+							<label for="inputEmail4" class="form-label">Email</label>
+							<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+						</div>
+						<div class="mb-3 col-md-6">
+							<label for="inputPassword4" class="form-label">Password</label>
+							<input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+						</div>
+					</div>
+					
+					<div class="mb-3">
+						<label for="inputAddress" class="form-label">Address</label>
+						<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+					</div>
+					
+					<div class="mb-3">
+						<label for="inputAddress2" class="form-label">Address 2</label>
+						<input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+					</div>
+					
+					<div class="row g-2">
+						<div class="mb-3 col-md-6">
+							<label for="inputCity" class="form-label">City</label>
+							<input type="text" class="form-control" id="inputCity">
+						</div>
+						<div class="mb-3 col-md-4">
+							<label for="inputState" class="form-label">State</label>
+							<select id="inputState" class="form-select">
+								<option>Choose</option>
+								<option>Option 1</option>
+								<option>Option 2</option>
+								<option>Option 3</option>
+							</select>
+						</div>
+						<div class="mb-3 col-md-2">
+							<label for="inputZip" class="form-label">Zip</label>
+							<input type="text" class="form-control" id="inputZip">
+						</div>
+					</div>
+					
+					<div class="mb-2">
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input" id="customCheck11">
+							<label class="form-check-label" for="customCheck11">Check this custom checkbox</label>
+						</div>
+					</div>
+					
+					<button type="submit" class="btn btn-primary">Sign in</button>
+				</form>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		   
+		</div>
+		 
+	   </div>
+
+	   
+	   <div class="row footer mt-4" style="border-top:1px solid #ddd; padding-top:20px;">
+	   <div class="col-md-8">
+	    <div class="footer_1l">
+		  <p class="mb-0 col_3">© 2013 Your Website Name. All Rights Reserved | Design by <a class="col_1 font-weight-bold" href="http://www.templateonweb.com">TemplateOnWeb</a></p>
+		</div>
+	   </div>
+	   <div class="col-md-4">
+	    <div class="footer_1r" style="text-align:right;">
+		 <ul>
+		  <li class="d-inline font_14"><a class="col_3" href="#">About </a></li>
+		  <li class="d-inline font_14"><a class="col_3" href="#">Support </a></li>
+		  <li class="d-inline font_14"><a class="col_3" href="#">Contact Us </a></li>
+		 </ul>
+		</div>
+	   </div>
+	  </div>
+    </main>
+  </div>
+</div>
+
+
+<script src="js/bootstrap.bundle.min.js" ></script>
+
+</script><script src="js/global.js"></script>
+  
+
+</body></html>

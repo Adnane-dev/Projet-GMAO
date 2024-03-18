@@ -1,7 +1,7 @@
 class equipement
 
-{#
-    id;
+{
+   #idEquipement;
     type;
     marque;
     modele;
@@ -10,7 +10,7 @@ class equipement
     dateInstallation;
     dateGarantie;
     constructor(pId, Type, Marque, Modele, NumeroSerie, Localisation, DateInstallation, DateGarantie) {
-        this.id = pId;
+        this.idEquipement= pId;
         this.type = Type;
         this.marque = Marque;
         this.modele = Modele;

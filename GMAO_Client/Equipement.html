@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
@@ -69,19 +69,26 @@
                 </div>
                 <div class="modal-body">
                     <form id="frmEquipement" name="frmEquipement">
-                        <input type="text" class="form-control" id="Id" hidden>
+                      <input type="text" class="form-control" id="IdEquipement" hidden>
                         <div class="mb-3">
                             <label for="Type">
-                                Marque
+                                Type
                                 <span class="text-danger">*</span>
                             </label>
                             <input type="text" class="form-control" id="Type" required>
                         </div>
                         <div class="mb-3">
-                            <label for="Categorie">
+                            <label for="Marque">
+                                Marque
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" class="form-control" id="Marque" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Modele">
                                Modele
                             </label>
-                            <input type="text" class="form-control" id="Categorie">
+                            <input type="text" class="form-control" id="Modele">
                         </div>
                         <div class="mb-3">
                             <label for="NumeroSerie">
@@ -90,10 +97,22 @@
                             <input type="number" class="form-control" id="NumeroSerie">
                         </div>
                         <div class="mb-3">
+                            <label for="Localisation">
+                                Localisation
+                            </label>
+                            <input type="text" class="form-control" id="Localisation">
+                        </div>
+                        <div class="mb-3">
                             <label for="DateInstallation">
-                                Date 
+                                Date d'Installation
                             </label>
                             <input type="date" class="form-control" id="DateInstallation">
+                        </div>
+                        <div class="mb-3">
+                            <label for="DateGarantie">
+                                Date de Garantie 
+                            </label>
+                            <input type="date" class="form-control" id="DateGarantie">
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-sm btn-secondary close-modal-Equipement"><i class="fa fa-times"></i> Cancel</button>

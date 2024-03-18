@@ -15,6 +15,8 @@ namespace GMAO.Models.Entities
         public string CodePostal { get; set; }
         public string Ville { get; set; }
         public string Rue { get; set; }
+        public ICollection<Contrats> listContrats { get; set; }
+       // public int IdContrats { get; set; }
 
     }
 }

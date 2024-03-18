@@ -1,8 +1,11 @@
-﻿namespace GMAO.Models.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace GMAO.Models.Entities
 {
     public class Equipements
     {
         // Propriétés
+        [Key]
         public int IdEquipement { get; set; } // Clé primaire
         public string Type { get; set; }
         public string Marque { get; set; }

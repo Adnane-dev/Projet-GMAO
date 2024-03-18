@@ -1,44 +1,77 @@
-﻿using GMAO.Models.BLL;
+﻿using Microsoft.AspNetCore.Mvc;
 using GMAO.Models.Entities;
-using Microsoft.AspNetCore.Mvc;
+using GMAO.Models.DAL;
+using System;
+using System.Collections.Generic;
 
 namespace GMAO.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
-    public class ClientsController : Controller
+    public class ClientsController : ControllerBase
     {
-      /*  // GET: api/Clients
+        // GET: api/Clients
         [HttpGet]
-        public JsonResult Get()
+        public ActionResult<IEnumerable<Clients>> GetAllClients()
         {
-            try
-            {
-                List<Clients> Clients = BLL_Clients.Get();
-                return Json(new { success = true, message = "Clientss found", data = Clients });
-            }
-            catch (Exception ex)
-            {
-                return Json(new { success = false, message = ex.Message });
-            }
-      
-        }*/
+            return DAL_Clients.GetAllClients();
+        }
 
+        // GET: api/Clients/5
+        [HttpGet("{id}")]
+        public ActionResult<Clients> GetClientById(int id)
+        {
+            var client = DAL_Clients.GetClientById(id);
+
+            if (client == null)
+            {
+                return NotFound();
+            }
+
+            return client;
+        }
 
         // POST: api/Clients
         [HttpPost]
-        public JsonResult Post([FromBody] Clients Clients)
+        public ActionResult<int> AddClient([FromBody] Clients client)
         {
+            var result = DAL_Clients.Add(client);
+            return Ok(result);
+        }
+
+        // PUT: api/Clients/5
+        [HttpPut("{id}")]
+        public IActionResult UpdateClient(int id, [FromBody] Clients client)
+        {
+            if (id != client.IdClient)
+            {
+                return BadRequest();
+            }
+
             try
             {
-                Clients.IdClient = BLL_Clients.Add(Clients);
-                return Json(new { success = true, message = "Successfully added", data = Clients });
+                DAL_Clients.Update(client);
+                return NoContent();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                return Json(new { success = false, message = ex.Message });
+                return StatusCode(500, "Internal server error");
             }
         }
 
+        // DELETE: api/Clients/5
+        [HttpDelete("{id}")]
+        public IActionResult DeleteClient(int id)
+        {
+            var client = DAL_Clients.GetClientById(id);
+            if (client == null)
+            {
+                return NotFound();
+            }
+
+            DAL_Clients.Delete(id);
+
+            return NoContent();
+        }
     }
 }

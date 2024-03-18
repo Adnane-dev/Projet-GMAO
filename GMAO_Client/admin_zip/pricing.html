@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Admin Console</title>
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet" >
+<link href="css/font-awesome.min.css" rel="stylesheet" >
+<link href="css/style.css" rel="stylesheet">
+<link href="css/nav.css" rel="stylesheet">
+<link href="css/global.css" rel="stylesheet">
+<link href="css/ecommerce.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+   
+</head>
+  <body>
+    
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="index.html"><h4>ADMINISTRATOR</h4></a>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <ul class="nav hide">
+  
+  <li class="nav-item sign_box_1">
+    <a class="nav-link  text-light" href="#"><i class="fa fa-comment"></i> 3</a>
+  </li>
+  
+  <li class="nav-item dropdown notification">
+    <a class="nav-link dropdown-toggle text-white  border-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><button type="button" class="border-0 btn bg-dark text-white   position-relative">
+  <i class="fa fa-bell"></i>
+  <span class="position-absolute start-100 translate-middle badge rounded-pill bg-danger" style="top:5px;">
+    3+
+    <span class="visually-hidden">unread messages</span>
+  </span>
+</button></a>
+    <ul class="dropdown-menu drop_1" style="left:auto; right:0; min-width:300px;">
+	  <li class="noti_p">Notification <span class="pull-right"><a href="#">Clear All</a></span></li>
+      <li class="noti_p1">
+	  <div class="noti_i p-2  row m-0">
+	   <div class="col-sm-3">
+	    <div class="noti_il">
+		  <a href="#"><img src="img/1.jpg" alt="abc" class="rounded-circle w-100"></a>
+		</div>
+	   </div>
+	   <div class="col-sm-9 p-0">
+	    <div class="noti_ir">
+		  <p class="mb-0">Caleb Flakelar commented on Admin
+                                                <small class="text-muted font-13">1 min ago</small>
+          </p>
+		</div>
+	   </div>
+	  </div>
+	  
+	  </li>
+	  <li class="noti_p1">
+	  <div class="noti_i p-2  row m-0">
+	   <div class="col-sm-3">
+	    <div class="noti_il">
+		  <a href="#"><img src="img/7.jpg" alt="abc" class="rounded-circle w-100"></a>
+		</div>
+	   </div>
+	   <div class="col-sm-9 p-0">
+	    <div class="noti_ir">
+		  <p class="mb-0">Caleb Flakelar commented on Admin
+                                                <small class="text-muted font-13">1 min ago</small>
+          </p>
+		</div>
+	   </div>
+	  </div>
+	  
+	  </li>
+	  <li class="noti_p1">
+	  <div class="noti_i p-2  row m-0">
+	   <div class="col-sm-3">
+	    <div class="noti_il">
+		  <a href="#"><img src="img/8.jpg" alt="abc" class="rounded-circle w-100"></a>
+		</div>
+	   </div>
+	   <div class="col-sm-9 p-0">
+	    <div class="noti_ir">
+		  <p class="mb-0">Caleb Flakelar commented on Admin
+                                                <small class="text-muted font-13">1 min ago</small>
+          </p>
+		</div>
+	   </div>
+	  </div>
+	  
+	  </li>
+	  <li class="noti_p1 border-0">
+	  <div class="noti_i p-2  row m-0">
+	   <div class="col-sm-3">
+	    <div class="noti_il">
+		  <a href="#"><img src="img/9.jpg" alt="abc" class="rounded-circle w-100"></a>
+		</div>
+	   </div>
+	   <div class="col-sm-9 p-0">
+	    <div class="noti_ir">
+		  <p class="mb-0">Caleb Flakelar commented on Admin
+                                                <small class="text-muted font-13">1 min ago</small>
+          </p>
+		</div>
+	   </div>
+	  </div>
+	  
+	  </li>
+    </ul>
+  </li>
+  <li class="nav-item sign_box dropdown">
+    <a class="nav-link dropdown-toggle text-white  border-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img alt="abc" class="rounded-circle" width="30"height="30" src="img/1.jpg">Eget Nulla</a>
+      <ul class="dropdown-menu drop_2" style="left:auto; right:0; min-width:200px;">
+	  <li class="small" style="padding: 0.25rem 1rem;">Welcome !</li>
+      <li><a class="dropdown-item" href="#"><i class="fa fa-user"></i> My Account</a></li>
+      <li><a class="dropdown-item" href="#"><i class="fa fa-gear"></i> Settings</a></li>
+      <li><a class="dropdown-item" href="#"><i class="fa fa-life-bouy"></i> Support</a></li>
+      <li><a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Lock Screen</a></li>
+	  <li><a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+    </ul>
+  </li>
+</ul>
+</header>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse" style="overflow-y: auto; max-height:inherit;">
+      <div class="position-sticky">
+      
+        <ul class="nav flex-column mb-2 list-unstyled ps-0">
+	  <li class="nav-item">
+        <a href="index.html" class="btn btn-toggle align-items-center rounded w-100 tag_m  no_drop"><i class="fa fa-dashboard icon-before"></i><span class="btn">Dashboard</span></a>
+        
+      </li>
+      
+      <li class="nav-item">
+        
+        <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed  w-100 tag_m active_tab" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="true"><i class="fa fa-shopping-cart icon-before"></i><span class="btn">Ecommerce</span><i class="fa fa-chevron-right"></i></a>
+        <div class="collapse show" id="orders-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="ecommerce_prod.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Product</span></a></li>
+            <li><a href="ecommerce_prod_details.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Product Details</span></a></li>
+            <li><a href="ecommerce_orders.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Order</span></a></li>
+            <li><a href="ecommerce_orders_detail.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Order Details</span></a></li>
+			 <li><a href="ecommerce_customers.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Customers</span></a></li>
+            <li><a href="ecommerce_sellers.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Sellers</span></a></li>
+			
+			<li><a href="cart.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Shopping Cart</span></a></li>
+			
+			<li><a href="checkout.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Checkout</span></a></li>
+			
+			<li><a href="billing.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Billing</span></a></li>
+			
+			<li><a href="invoice.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Invoice</span></a></li>
+			
+			<li><a href="pricing.html" class="link-dark rounded w-100 active_tab"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Pricing</span></a></li>
+          </ul>
+        </div>
+      </li>
+      
+      <li class="nav-item">
+       
+        <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false"><i class="fa fa-briefcase icon-before"></i><span class="btn">Projects</span><i class="fa fa-chevron-right"></i></a>
+        <div class="collapse" id="account-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="project_list.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Lists</span></a></li>
+            <li><a href="project_list_detail.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Details</span></a></li>
+            <li><a href="create_project.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Create Project</span></a></li>
+			  
+          </ul>
+        </div>
+      </li>
+	  
+	  <li class="nav-item">
+       
+        <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#Authent-collapse" aria-expanded="false"><i class="fa fa-lock icon-before"></i><span class="btn">Authentication</span><i class="fa fa-chevron-right"></i></a>
+        <div class="collapse" id="Authent-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a target="_blank"  href="authent_login.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Login</span></a></li>
+            <li><a target="_blank"  href="authent_logout.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Logout</span></a></li>
+            <li><a target="_blank"  href="authent_register.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Register</span></a></li>
+			
+			<li><a target="_blank"  href="authent_forgot.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Forgot Password</span></a></li>
+			
+			<li><a target="_blank"  href="authent_confirm_mail.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Confirm Mail</span></a></li>
+			
+			<li><a target="_blank"  href="authent_reset_pass.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Reset Password</span></a></li>
+			
+			<li><a target="_blank"  href="authent_error.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Error</span></a></li>
+			
+			<li><a target="_blank"  href="authent_card_login.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Card Login</span></a></li>
+			
+			<li><a target="_blank"  href="authent_card_logout.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Card Logout</span></a></li>
+			
+			<li><a target="_blank"  href="authent_card_register.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Card Register</span></a></li>
+			
+			<li><a target="_blank"  href="authent_card_forgot.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Card Forgot</span></a></li>
+			
+			<li><a target="_blank"  href="authent_card_confirm_mail.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Card Confirm Mail</span></a></li>
+			
+			<li><a target="_blank"  href="authent_card_reset_pass.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Card Reset Pass</span></a></li>
+          </ul>
+        </div>
+      </li>
+	  
+	  <li class="nav-item">
+       
+        <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#pages-collapse" aria-expanded="false"><i class="fa fa-copy icon-before"></i><span class="btn">Pages</span><i class="fa fa-chevron-right"></i></a>
+        <div class="collapse" id="pages-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+		    <li><a  href="profile.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Profile</span></a></li>
+		    <li><a target="_blank" href="authen_login.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Login</span></a></li>
+		     <li><a target="_blank" href="login2.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Login 2</span></a></li>
+            <li><a target="_blank" href="error.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Error</span></a></li>
+            <li><a target="_blank" href="authen_register.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Register</span></a></li>
+			<li><a target="_blank" href="authen_logout.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Logout</span></a></li>
+            <li><a target="_blank" href="authen_recover.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Recover Password</span> </a></li>
+            <li><a target="_blank" href="authen_lock_screen.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Lock Screen</span></a></li>
+            <li><a target="_blank" href="authen_confirm_mail.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Confirm Mail</span> </a></li>
+
+          </ul>
+        </div>
+      </li>
+	  
+	  
+	  <li class="nav-item">
+       
+        <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#base-collapse" aria-expanded="false"><i class="fa fa-diamond icon-before"></i><span class="btn">Base UI</span><i class="fa fa-chevron-right"></i></a>
+        <div class="collapse" id="base-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="base_accordions.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Accordions</span></a></li>
+            <li><a href="base_alerts.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Alerts</span></a></li>
+            <li><a href="base_badges.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Badges</span> </a></li>
+            <li><a href="base_breadcrumb.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Breadcrumb</span></a></li>
+            <li><a href="base_buttons.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Buttons</span> </a></li>
+			<li><a href="base_card.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Cards</span></a></li>
+            <li><a href="base_carousel.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Carousel</span></a></li>
+			<li><a href="base_dropdown.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Dropdowns</span></a></li>
+            <li><a href="base_grid.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Grid</span></a></li>
+            <li><a href="base_listgroup.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> List Group</span> </a></li>
+			<li><a href="base_modals.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Modals</span></a></li>
+            <li><a href="base_notifi.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Notifications</span></a></li>
+			<li><a href="base_offcanvas.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Offcanvas</span></a></li>
+            <li><a href="base_placeh.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Placeholders</span> </a></li>
+            <li><a href="base_pagination.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Pagination</span></a></li>
+			<li><a href="base_progress.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Progress</span></a></li>
+			<li><a href="base_spinners.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Spinners</span></a></li>
+            <li><a href="base_tabs.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Tabs</span> </a></li>
+            <li><a href="base_tooltips.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Tooltips</span></a></li>
+            <li><a href="base_typo.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Typography </span></a></li>
+          </ul>
+        </div>
+      </li>
+	  
+	  <li class="nav-item">
+       
+        <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#Forms-collapse" aria-expanded="false"><i class="fa fa-file icon-before"></i><span class="btn">Forms</span><i class="fa fa-chevron-right"></i></a>
+        <div class="collapse" id="Forms-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="form_basic.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Basic Elements</span></a></li>
+			<li><a href="form_validation.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Validation</span></a></li>
+            <li><a href="form_wizard.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Wizard</span></a></li>
+			<li><a href="form.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>Wordpress  Form</span></a></li>
+			<li><a href="list.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>Wordpress List</span></a></li>
+          </ul>
+        </div>
+      </li>
+	  
+	  <li class="nav-item">
+       
+        <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#table-collapse" aria-expanded="false"><i class="fa fa-table icon-before"></i><span class="btn">Table</span><i class="fa fa-chevron-right"></i></a>
+        <div class="collapse" id="table-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="table_basic.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Basic Table</span></a></li>
+			<li><a href="table_tow.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Tow Table</span></a></li>
+          </ul>
+        </div>
+      </li>
+	  
+	  <li class="nav-item">
+        <a href="chat.html" class="btn btn-toggle align-items-center rounded w-100 tag_m  no_drop"><i class="fa fa-comment-o icon-before"></i><span class="btn">Chat</span></a>
+      </li>
+	  
+	  <li class="nav-item">
+        <a href="chart_chartjs.html" class="btn btn-toggle align-items-center rounded w-100 tag_m  no_drop"><i class="fa fa-bar-chart icon-before"></i><span class="btn">Charts</span></a>
+      </li>
+	  
+	  <li class="nav-item">
+        <a href="email.html" class="btn btn-toggle align-items-center rounded w-100 tag_m  no_drop"><i class="fa fa-envelope icon-before"></i><span class="btn">Email</span></a>
+      </li>
+    </ul>
+    
+    
+      <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span>Saved reports</span>
+          <a class="link-secondary" href="#" aria-label="Add a new report">
+            <svg xmlns="#" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+          </a>
+        </h6>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link text-muted" href="#">
+              <svg xmlns="#" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              Integrations
+            </a>
+          </li>
+        </ul>
+        
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto common col-lg-10 px-md-4">
+       <div class="row crm_1 mb-3">
+	   <div class="col-md-3">
+	    <div class="analytic_1l">
+		 <h5 class="mb-0">Pricing</h5>
+		</div>
+	   </div>
+	   <div class="col-md-9">
+	    <div class="crm_1r pull-right">
+	      <ul class="mb-0">
+		   <li class="col_3 d-inline-block"><a href="#">Lorem</a> <i style="margin-left:5px; vertical-align:middle;" class="fa fa-chevron-right"></i></li>
+		   <li class="col_3 d-inline-block"><a href="#">eCommerce</a> <i style="margin-left:5px; vertical-align:middle;" class="fa fa-chevron-right"></i></li>
+		   <li class="col_3 d-inline-block"> Pricing</li>
+		  </ul>
+		</div>
+	   </div>
+	  </div>
+	   
+	   <div class="row billing bg-white" style="margin-left:0; margin-right:0; padding:20px 10px; border-radius:5px; box-shadow: 0px 0px 8px 1px #d8e2ef; border:1px solid #d8e2ef;">
+	    <div class="col-md-12">
+		  <div class="billing_i">
+		   <p class="font_14 bold">Free for 30 days</p>
+		   <h4 style="font-size: 1.728rem;">For teams of all sizes, in the cloud</h4>
+		   <p>Get the power, control, and customization you need to manage your<br>
+team’s and organization’s projects.</p>
+            <p class="mb-0 font_14"><a class="colo_4 bold" href="#"> Have questions? Chat with us</a></p>
+		  </div>
+		</div>
+	   </div>
+	   
+	   <div class="row pricing_1 bg-white m-0 mt-3" style="margin-left:0; margin-right:0; padding:20px 10px; border-radius:5px; box-shadow: 0px 0px 8px 1px #d8e2ef; border:1px solid #d8e2ef;">
+	     <div class="pricing_1i row m-0">
+		  <div class="col-md-6 p-0">
+		   <div class="pricing_1il">
+		    <h5 class="mb-0">Billed Annually <span class="badge_1 text_12 bold" style="color:#00864e; vertical-align:middle; background:#ccf6e4;">Save 25%</span></h5>
+		   </div>
+		  </div>
+		  <div class="col-md-6 p-0">
+		   <div class="pricing_1ir float-end">
+		              <label class="form-check-label me-2 bold colo_8">Monthly</label>
+                      <div class="form-check form-switch mb-0 d-inline-block"><input class="form-check-input"  type="checkbox" checked="checked"><label class="form-check-label align-top bold colo_8" for="customSwitch1">Yearly</label></div>
+                    </div>
+		   </div>
+		  </div>
+		  <div class="pricing_1i1 row" style="border-top:1px solid #d8e2ef; margin-top:20px!important; margin-left:0; margin-right:0;">
+		  <div class="col-md-4">
+		    <div class="pricing_1i1i text-center" style="padding:30px 15px 30px 15px;">
+			 <h3 style="font-size: 1.728rem;">Single</h3>
+			 <p>For teams that need to  <br> create project plans with<br> confidence.</p>
+			 <h3 style="font-size: 1.728rem;"><span style="font-size:20px; vertical-align:middle;">$</span>10<span class="text_13"> / year</span></h3>
+			 <h6 class="mt-4 mb-0"><a style="padding: 0.3125rem 1rem;" class="btn btn-outline-primary bold" href="#">Start free trial</a></h6>
+			</div>
+		   </div>
+		  <div class="col-md-4">
+		    <div class="pricing_1i1i text-center" style="padding:30px 15px 30px 15px; background:#e6fffc;">
+			 <h3 style="font-size: 1.728rem;">Business</h3>
+			 <p>For teams that need to  <br> create project plans with<br> confidence.</p>
+			 <h3 style="font-size: 1.728rem;"><span style="font-size:20px; vertical-align:middle;">$</span>49<span class="text_13"> / year</span></h3>
+			 <h6 class="mt-4 mb-0"><a style="padding: 0.3125rem 1rem;" class="btn btn-primary bold" href="#">Get Business</a></h6>
+			</div>
+		   </div>
+		   <div class="col-md-4">
+		    <div class="pricing_1i1i text-center" style="padding:30px 15px 30px 15px;">
+			 <h3 style="font-size: 1.728rem;">Extended</h3>
+			 <p>For teams that need to  <br> create project plans with<br> confidence.</p>
+			 <h3 style="font-size: 1.728rem;"><span style="font-size:20px; vertical-align:middle;">$</span>90<span class="text_13"> / year</span></h3>
+			 <h6 class="mt-4 mb-0"><a style="padding: 0.3125rem 1rem;" class="btn btn-outline-primary bold" href="#">Purchase</a></h6>
+			</div>
+		   </div>
+		  </div>
+		  <div class="pricing_1i2 row" style="border-top:1px solid #d8e2ef; margin-left:0; margin-right:0;">
+		  <div class="col-md-4">
+		    <div class="pricing_1i1i" style="padding:30px 15px 30px 15px;">
+			 <h5>Track team projects with free:</h5>
+			 <h6 class="normal mt-3"><i style="margin-right:5px;" class="fa fa-check colo_2"></i> Timeline</h6>
+			 <h6 class="normal mt-3"><i style="margin-right:5px;" class="fa fa-check colo_2"></i>  Advanced Search</h6>
+			 <h6 class="normal mt-3"><i style="margin-right:5px;" class="fa fa-check colo_2"></i>  Custom fields <span class="badge_1 text_12 bold" style="color:#00864e; vertical-align:middle; background:#ccf6e4;">New</span></h6>
+			 <h6 class="normal mt-3"><i style="margin-right:5px;" class="fa fa-check colo_2"></i>  Task dependencies</h6>
+			 <h6 class="normal mt-3"><i style="margin-right:5px;" class="fa fa-check colo_2"></i>  Private teams & projects</h6>
+			 <h5 class="mb-0 mt-4" style="margin-left:25px;"><a class="colo_4 normal" href="#">More about Single</a></h5>
+			</div>
+		   </div>
+		  <div class="col-md-4">
+		    <div class="pricing_1i1i" style="padding:30px 15px 30px 15px; background:#e6fffc;">
+			  <h5>Everything in Premium, plus:</h5>
+			 <h6 class="normal mt-3"><i style="margin-right:5px;" class="fa fa-check colo_2"></i> Portfolios</h6>
+			 <h6 class="normal mt-3"><i style="margin-right:5px;" class="fa fa-check colo_2"></i>   Lock custom fields</h6>
+			 <h6 class="normal mt-3"><i style="margin-right:5px;" class="fa fa-check colo_2"></i>   Onboarding plan </h6>
+			 <h6 class="normal mt-3"><i style="margin-right:5px;" class="fa fa-check colo_2"></i>   Resource Management</h6>
+			 <h6 class="normal mt-3"><i style="margin-right:5px;" class="fa fa-check colo_2"></i>  Lock custom fields</h6>
+			 <h5 class="mb-0 mt-4" style="margin-left:25px;"><a class="colo_4 normal" href="#">More about Business</a></h5>
+			</div>
+		   </div>
+		   <div class="col-md-4">
+		    <div class="pricing_1i1i" style="padding:30px 15px 30px 15px;">
+			 <h5>Everything in Business, plus:</h5>
+			 <h6 class="normal mt-3"><i style="margin-right:5px;" class="fa fa-check colo_2"></i> Portfolios</h6>
+			 <h6 class="normal mt-3"><i style="margin-right:5px;" class="fa fa-check colo_2"></i>  Tags <span class="badge_1 text_12 bold" style="color:#1c4f93; background:#d5e5fa; vertical-align:middle;">Coming Soon</span></h6>
+			 <h6 class="normal mt-3"><i style="margin-right:5px;" class="fa fa-check colo_2"></i>  Onboarding plan </h6>
+			 <h6 class="normal mt-3"><i style="margin-right:5px;" class="fa fa-check colo_2"></i>  Resource Management</h6>
+			 <h5 class="mb-0 mt-4" style="margin-left:25px;"><a class="colo_4 normal" href="#">More about Extended</a></h5>
+			</div>
+		   </div>
+		  </div>
+		  <div class="pricing_1i2 row text-center" style="border-top:1px solid #d8e2ef; margin-left:0; margin-right:0; padding-top:30px; padding-bottom:15px;">
+		    <div class="col-md-12">
+			  <h5>Looking for personal or small team task management?</h5>
+			  <h6 class="normal mb-0">Try the <a class="colo_4" href="#">basic version</a> of Admin</h6>
+			</div>
+		  </div>
+		  
+		 </div>
+		 
+		<div class="row pricing_2 bg-white m-0 mt-3 text-center" style="margin-left:0; margin-right:0; padding:20px 10px; border-radius:5px 5px 0px 0px; box-shadow: 0px 0px 8px 1px #d8e2ef;">
+		 <div class="col-md-12">
+		   <h4 class="mb-0" style="font-size: 1.44rem;">Frequently asked questions</h4>
+		 </div>
+		</div>
+		
+		<div class="row pricing_3 bg-light m-0" style="margin-left:0; margin-right:0; padding:20px 10px; border-radius:0px 0px 5px 5px; box-shadow: 0px 0px 8px 1px #d8e2ef;">
+		 <div class="col-md-12">
+		   <div class="pricing_3i">
+		    <h6 class="text_13"><a class="colo_4" href="#">How does Falcon's pricing work? <i style="margin-left:5px;" class="fa fa-caret-right"></i></a></h6>
+			<p class="text_13 mb-0">The free version of Falcon is available for teams of up to 15 people. Our Falcon Premium plans of 15 or fewer qualify for a small team discount. As your team grows to 20 users or more and gets more value out of Falcon, you'll get closer to our standard monthly price per seat. The price of a paid Falcon plan is tiered, starting in groups of 5 and 10 users, based on the number of people you have in your Team or Organization.</p>
+			<hr>
+		   </div>
+		   <div class="pricing_3i">
+		    <h6 class="text_13"><a class="colo_4" href="#">What forms of payment do you accept? <i style="margin-left:5px;" class="fa fa-caret-right"></i></a></h6>
+			<p class="text_13 mb-0">You can purchase Falcon with any major credit card. For annual subscriptions, we can issue an invoice payable by bank transfer or check. Please contact us to arrange an invoice purchase. Monthly purchases must be paid for by credit card.</p>
+			<hr>
+		   </div>
+		   <div class="pricing_3i">
+		    <h6 class="text_13"><a class="colo_4" href="#">We need to add more people to our team. How will that be billed? <i style="margin-left:5px;" class="fa fa-caret-right"></i></a></h6>
+			<p class="text_13 mb-0">You can add as many new teammates as you need before changing your subscription. We will subsequently ask you to correct your subscription to cover current usage.</p>
+			<hr>
+		   </div>
+		     <div class="pricing_3i">
+		    <h6 class="text_13"><a class="colo_4" href="#">How secure is Panel? <i style="margin-left:5px;" class="fa fa-caret-right"></i></a></h6>
+			<p class="text_13 mb-0">The free version of Falcon is available for teams of up to 15 people. Our Falcon Premium plans of 15 or fewer qualify for a small team discount. As your team grows to 20 users or more and gets more value out of Falcon, you'll get closer to our standard monthly price per seat. The price of a paid Falcon plan is tiered, starting in groups of 5 and 10 users, based on the number of people you have in your Team or Organization.</p>
+			<hr>
+		   </div>
+		   <div class="pricing_3i">
+		    <h6 class="text_13"><a class="colo_4" href="#">Will I be charged sales tax? <i style="margin-left:5px;" class="fa fa-caret-right"></i></a></h6>
+			<p class="text_13 mb-0">You can purchase Falcon with any major credit card. For annual subscriptions, we can issue an invoice payable by bank transfer or check. Please contact us to arrange an invoice purchase. Monthly purchases must be paid for by credit card.</p>
+			<hr>
+		   </div>
+		   <div class="pricing_3i">
+		    <h6 class="text_13"><a class="colo_4" href="#">What is your refund policy? <i style="margin-left:5px;" class="fa fa-caret-right"></i></a></h6>
+			<p class="text_13 mb-0">We do not offer refunds apart from exceptions listed below. If you cancel your plan before the next renewal cycle, you will retain access to paid features until the end of your subscription period. When your subscription expires, you will lose access to paid features and all data associated with those features. Exceptions to our refund policy: canceling within 48 hours of initial charge will result in a full refund. If you cancel within this timeframe, you will lose access to paid features and associated data immediately upon canceling.</p>
+			<ul class="mb-0 mt-4">
+			 <li style="font-size: 0.875rem; margin-right:10px;" class="d-inline-block bold">Was this information helpful?</li>
+			 <li style="font-size: 0.875rem;" class="d-inline-block bold"><a style="border:1px solid #d8e2ef; padding: 0.1875rem 0.75rem; border-radius: 0.2rem;" class="btn btn-default bg-white bold" href="#">Yes</a></li>
+			 <li style="font-size: 0.875rem;" class="d-inline-block bold"><a style="border:1px solid #d8e2ef; padding: 0.1875rem 0.75rem; border-radius: 0.2rem;" class="btn btn-default bg-white bold" href="#">No</a></li>
+			</ul>
+		   </div>
+		 </div>
+		</div>
+	   </div>
+	   
+	   <div class="row footer mt-4">
+	   <div class="col-md-8">
+	    <div class="footer_1l">
+		  <p class="mb-0 col_3">© 2013 Your Website Name. All Rights Reserved | Design by <a class="col_1 font-weight-bold" href="http://www.templateonweb.com">TemplateOnWeb</a></p>
+		</div>
+	   </div>
+	   <div class="col-md-4">
+	    <div class="footer_1r" style="text-align:right;">
+		 <ul>
+		  <li class="d-inline font_14"><a class="col_3" href="#">About </a></li>
+		  <li class="d-inline font_14"><a class="col_3" href="#">Support </a></li>
+		  <li class="d-inline font_14"><a class="col_3" href="#">Contact Us </a></li>
+		 </ul>
+		</div>
+	   </div>
+	  </div>
+    </main>
+  </div>
+</div>
+
+
+<script src="js/bootstrap.bundle.min.js" ></script>
+
+</script><script src="js/global.js"></script>
+  
+
+</body></html>

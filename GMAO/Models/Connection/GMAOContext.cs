@@ -6,14 +6,14 @@ namespace GMAO.Models.Connection
 {
     public class GMAOContext : DbContext
     {
-     /*   public GMAOContext()
+        public GMAOContext()
         {
         }
 
         public GMAOContext(DbContextOptions<GMAOContext> options) : base(options)
         {
 
-        }*/
+        }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-K8IAMOO\SQLEXPRESS01;Initial Catalog=GMAO_DB;Integrated Security=True;");
@@ -24,21 +24,35 @@ namespace GMAO.Models.Connection
         public DbSet<Factures> Factures { get; set; }
         public DbSet<Interventions> Interventions { get; set; }
         public DbSet<Stocks> Stocks { get; set; }
-        public DbSet<Techniciens> Techniciens {get; set;}
+        public DbSet<Techniciens> Techniciens { get; set; }
 
 
 
 
-        /*
-            
-                    protected override void OnModelCreating(ModelBuilder modelBuilder)
-                    {
-                        modelBuilder.Entity<Contrats>().ToTable("Contrats");
-                        modelBuilder.Entity<Devis>().ToTable("Devis");
-                        modelBuilder.Entity<Factures>().ToTable("Factures");
-                        modelBuilder.Entity<Interventions>().ToTable("Interventions");
-                        modelBuilder.Entity<Stocks>().ToTable("Stocks"); // Corrected typo: "Stocts" to "Stocks"
-                    }*/
 
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Contrats>(
+                entity =>
+                {
+                    /*entity.HasOne(a => a.Clients)
+                    .WithOne(p => p.Contrats)
+                    .HasForeignKey<Clients>(p => p.IdContrats)
+                    .OnDelete(DeleteBehavior.NoAction);*/
+
+                    entity.HasOne(a => a.Clients)
+                    .WithMany(p => p.listContrats)
+                    .HasForeignKey(p => p.IdClient)
+                    .OnDelete(DeleteBehavior.NoAction);
+
+                });
+            /*
+            modelBuilder.Entity<Devis>().ToTable("Devis");
+            modelBuilder.Entity<Factures>().ToTable("Factures");
+            modelBuilder.Entity<Interventions>().ToTable("Interventions");
+            modelBuilder.Entity<Stocks>().ToTable("Stocks"); // Corrected typo: "Stocts" to "Stocks"*/
+
+        }
     }
 }

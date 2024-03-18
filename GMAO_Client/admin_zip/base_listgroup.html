@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Admin Console</title>
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet" >
+<link href="css/font-awesome.min.css" rel="stylesheet" >
+<link href="css/style.css" rel="stylesheet">
+<link href="css/nav.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/shCoreEclipse.css"/>
+<link type="text/css" rel="Stylesheet" href="css/shThemeEclipse.css" />
+<link href="css/global.css" rel="stylesheet">
+<link href="css/baseui.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+<script type="text/javascript" src="js/XRegExp.js"></script>
+<script type="text/javascript" src="js/shCore.js"></script>
+<script type="text/javascript" src="js/shBrushXml.js"></script>
+<script type="text/javascript">
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['gutter'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+    SyntaxHighlighter.all();
+</script>
+
+
+
+   
+</head>
+<body>
+    
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="index.html"><h4>ADMINISTRATOR</h4></a>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <ul class="nav hide">
+  
+  <li class="nav-item sign_box_1">
+    <a class="nav-link  text-light" href="#"><i class="fa fa-comment"></i> 3</a>
+  </li>
+  
+  <li class="nav-item dropdown notification">
+    <a class="nav-link dropdown-toggle text-white  border-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><button type="button" class="border-0 btn bg-dark text-white   position-relative">
+  <i class="fa fa-bell"></i>
+  <span class="position-absolute start-100 translate-middle badge rounded-pill bg-danger" style="top:5px;">
+    3+
+    <span class="visually-hidden">unread messages</span>
+  </span>
+</button></a>
+    <ul class="dropdown-menu drop_1" style="left:auto; right:0; min-width:300px;">
+	  <li class="noti_p">Notification <span class="pull-right"><a href="#">Clear All</a></span></li>
+      <li class="noti_p1">
+	  <div class="noti_i p-2  row m-0">
+	   <div class="col-sm-3">
+	    <div class="noti_il">
+		  <a href="#"><img src="img/1.jpg" alt="abc" class="rounded-circle w-100"></a>
+		</div>
+	   </div>
+	   <div class="col-sm-9 p-0">
+	    <div class="noti_ir">
+		  <p class="mb-0">Caleb Flakelar commented on Admin
+                                                <small class="text-muted font-13">1 min ago</small>
+          </p>
+		</div>
+	   </div>
+	  </div>
+	  
+	  </li>
+	  <li class="noti_p1">
+	  <div class="noti_i p-2  row m-0">
+	   <div class="col-sm-3">
+	    <div class="noti_il">
+		  <a href="#"><img src="img/7.jpg" alt="abc" class="rounded-circle w-100"></a>
+		</div>
+	   </div>
+	   <div class="col-sm-9 p-0">
+	    <div class="noti_ir">
+		  <p class="mb-0">Caleb Flakelar commented on Admin
+                                                <small class="text-muted font-13">1 min ago</small>
+          </p>
+		</div>
+	   </div>
+	  </div>
+	  
+	  </li>
+	  <li class="noti_p1">
+	  <div class="noti_i p-2  row m-0">
+	   <div class="col-sm-3">
+	    <div class="noti_il">
+		  <a href="#"><img src="img/8.jpg" alt="abc" class="rounded-circle w-100"></a>
+		</div>
+	   </div>
+	   <div class="col-sm-9 p-0">
+	    <div class="noti_ir">
+		  <p class="mb-0">Caleb Flakelar commented on Admin
+                                                <small class="text-muted font-13">1 min ago</small>
+          </p>
+		</div>
+	   </div>
+	  </div>
+	  
+	  </li>
+	  <li class="noti_p1 border-0">
+	  <div class="noti_i p-2  row m-0">
+	   <div class="col-sm-3">
+	    <div class="noti_il">
+		  <a href="#"><img src="img/9.jpg" alt="abc" class="rounded-circle w-100"></a>
+		</div>
+	   </div>
+	   <div class="col-sm-9 p-0">
+	    <div class="noti_ir">
+		  <p class="mb-0">Caleb Flakelar commented on Admin
+                                                <small class="text-muted font-13">1 min ago</small>
+          </p>
+		</div>
+	   </div>
+	  </div>
+	  
+	  </li>
+    </ul>
+  </li>
+  <li class="nav-item sign_box dropdown">
+    <a class="nav-link dropdown-toggle text-white  border-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img alt="abc" class="rounded-circle" width="30"height="30" src="img/1.jpg">Eget Nulla</a>
+      <ul class="dropdown-menu drop_2" style="left:auto; right:0; min-width:200px;">
+	  <li class="small" style="padding: 0.25rem 1rem;">Welcome !</li>
+      <li><a class="dropdown-item" href="#"><i class="fa fa-user"></i> My Account</a></li>
+      <li><a class="dropdown-item" href="#"><i class="fa fa-gear"></i> Settings</a></li>
+      <li><a class="dropdown-item" href="#"><i class="fa fa-life-bouy"></i> Support</a></li>
+      <li><a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Lock Screen</a></li>
+	  <li><a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+    </ul>
+  </li>
+</ul>
+</header>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse" style="overflow-y: auto; max-height:inherit;">
+      <div class="position-sticky">
+      
+        <ul class="nav flex-column mb-2 list-unstyled ps-0">
+	  <li class="nav-item">
+        <a href="index.html" class="btn btn-toggle align-items-center rounded w-100 tag_m  no_drop"><i class="fa fa-dashboard icon-before"></i><span class="btn">Dashboard</span></a>
+        
+      </li>
+      
+      <li class="nav-item">
+        
+        <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed  w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false"><i class="fa fa-shopping-cart icon-before"></i><span class="btn">Ecommerce</span><i class="fa fa-chevron-right"></i></a>
+        <div class="collapse" id="orders-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="ecommerce_prod.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Product</span></a></li>
+            <li><a href="ecommerce_prod_details.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Product Details</span></a></li>
+            <li><a href="ecommerce_orders.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Order</span></a></li>
+            <li><a href="ecommerce_orders_detail.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Order Details</span></a></li>
+			 <li><a href="ecommerce_customers.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Customers</span></a></li>
+            <li><a href="ecommerce_sellers.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Sellers</span></a></li>
+			
+			<li><a href="cart.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Shopping Cart</span></a></li>
+			
+			<li><a href="checkout.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Checkout</span></a></li>
+			
+			<li><a href="billing.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Billing</span></a></li>
+			
+			<li><a href="invoice.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Invoice</span></a></li>
+			
+			<li><a href="pricing.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Pricing</span></a></li>
+          </ul>
+        </div>
+      </li>
+      
+      <li class="nav-item">
+       
+        <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false"><i class="fa fa-briefcase icon-before"></i><span class="btn">Projects</span><i class="fa fa-chevron-right"></i></a>
+        <div class="collapse" id="account-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="project_list.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Lists</span></a></li>
+            <li><a href="project_list_detail.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Details</span></a></li>
+            <li><a href="create_project.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Create Project</span></a></li>
+			  
+          </ul>
+        </div>
+      </li>
+	  
+	  <li class="nav-item">
+       
+        <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#Authent-collapse" aria-expanded="false"><i class="fa fa-lock icon-before"></i><span class="btn">Authentication</span><i class="fa fa-chevron-right"></i></a>
+        <div class="collapse" id="Authent-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a target="_blank"  href="authent_login.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Login</span></a></li>
+            <li><a target="_blank"  href="authent_logout.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Logout</span></a></li>
+            <li><a target="_blank"  href="authent_register.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Register</span></a></li>
+			
+			<li><a target="_blank"  href="authent_forgot.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Forgot Password</span></a></li>
+			
+			<li><a target="_blank"  href="authent_confirm_mail.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Confirm Mail</span></a></li>
+			
+			<li><a target="_blank"  href="authent_reset_pass.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Reset Password</span></a></li>
+			
+			<li><a target="_blank"  href="authent_error.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Error</span></a></li>
+			
+			<li><a target="_blank"  href="authent_card_login.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Card Login</span></a></li>
+			
+			<li><a target="_blank"  href="authent_card_logout.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Card Logout</span></a></li>
+			
+			<li><a target="_blank"  href="authent_card_register.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Card Register</span></a></li>
+			
+			<li><a target="_blank"  href="authent_card_forgot.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Card Forgot</span></a></li>
+			
+			<li><a target="_blank"  href="authent_card_confirm_mail.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Card Confirm Mail</span></a></li>
+			
+			<li><a target="_blank"  href="authent_card_reset_pass.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>  Card Reset Pass</span></a></li>
+          </ul>
+        </div>
+      </li>
+	  
+	  <li class="nav-item">
+       
+        <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#pages-collapse" aria-expanded="false"><i class="fa fa-copy icon-before"></i><span class="btn">Pages</span><i class="fa fa-chevron-right"></i></a>
+        <div class="collapse" id="pages-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+		    <li><a  href="profile.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Profile</span></a></li>
+		    <li><a target="_blank" href="authen_login.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Login</span></a></li>
+		     <li><a target="_blank" href="login2.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Login 2</span></a></li>
+            <li><a target="_blank" href="error.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Error</span></a></li>
+            <li><a target="_blank" href="authen_register.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Register</span></a></li>
+			<li><a target="_blank" href="authen_logout.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Logout</span></a></li>
+            <li><a target="_blank" href="authen_recover.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Recover Password</span> </a></li>
+            <li><a target="_blank" href="authen_lock_screen.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Lock Screen</span></a></li>
+            <li><a target="_blank" href="authen_confirm_mail.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Confirm Mail</span> </a></li>
+
+          </ul>
+        </div>
+      </li>
+	  
+	  
+	  <li class="nav-item">
+       
+        <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m active_tab" data-bs-toggle="collapse" data-bs-target="#base-collapse" aria-expanded="true"><i class="fa fa-diamond icon-before"></i><span class="btn">Base UI</span><i class="fa fa-chevron-right"></i></a>
+        <div class="collapse show" id="base-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="base_accordions.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Accordions</span></a></li>
+            <li><a href="base_alerts.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Alerts</span></a></li>
+            <li><a href="base_badges.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Badges</span> </a></li>
+            <li><a href="base_breadcrumb.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Breadcrumb</span></a></li>
+            <li><a href="base_buttons.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Buttons</span> </a></li>
+			<li><a href="base_card.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Cards</span></a></li>
+            <li><a href="base_carousel.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Carousel</span></a></li>
+			<li><a href="base_dropdown.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Dropdowns</span></a></li>
+            <li><a href="base_grid.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Grid</span></a></li>
+            <li><a href="base_listgroup.html" class="link-dark rounded w-100 active_tab"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> List Group</span> </a></li>
+			<li><a href="base_modals.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Modals</span></a></li>
+            <li><a href="base_notifi.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Notifications</span></a></li>
+			<li><a href="base_offcanvas.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Offcanvas</span></a></li>
+            <li><a href="base_placeh.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Placeholders</span> </a></li>
+            <li><a href="base_pagination.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Pagination</span></a></li>
+			<li><a href="base_progress.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Progress</span></a></li>
+			<li><a href="base_spinners.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Spinners</span></a></li>
+            <li><a href="base_tabs.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Tabs</span> </a></li>
+            <li><a href="base_tooltips.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Tooltips</span></a></li>
+            <li><a href="base_typo.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Typography </span></a></li>
+          </ul>
+        </div>
+      </li>
+	  
+	  <li class="nav-item">
+       
+        <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#Forms-collapse" aria-expanded="false"><i class="fa fa-file icon-before"></i><span class="btn">Forms</span><i class="fa fa-chevron-right"></i></a>
+        <div class="collapse" id="Forms-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="form_basic.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Basic Elements</span></a></li>
+			<li><a href="form_validation.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Validation</span></a></li>
+            <li><a href="form_wizard.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Wizard</span></a></li>
+			<li><a href="form.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>Wordpress  Form</span></a></li>
+			<li><a href="list.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i>Wordpress List</span></a></li>
+          </ul>
+        </div>
+      </li>
+	  
+	  <li class="nav-item">
+       
+        <a href="javascript:void(0);" class="btn btn-toggle align-items-center rounded collapsed w-100 tag_m" data-bs-toggle="collapse" data-bs-target="#table-collapse" aria-expanded="false"><i class="fa fa-table icon-before"></i><span class="btn">Table</span><i class="fa fa-chevron-right"></i></a>
+        <div class="collapse" id="table-collapse" style="">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="table_basic.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Basic Table</span></a></li>
+			<li><a href="table_tow.html" class="link-dark rounded w-100"><span><i style="font-size:8px; vertical-align:middle; margin-right:10px;" class="fa fa-circle-o"></i> Tow Table</span></a></li>
+          </ul>
+        </div>
+      </li>
+	  
+	  <li class="nav-item">
+        <a href="chat.html" class="btn btn-toggle align-items-center rounded w-100 tag_m  no_drop"><i class="fa fa-comment-o icon-before"></i><span class="btn">Chat</span></a>
+      </li>
+	  
+	  <li class="nav-item">
+        <a href="chart_chartjs.html" class="btn btn-toggle align-items-center rounded w-100 tag_m  no_drop"><i class="fa fa-bar-chart icon-before"></i><span class="btn">Charts</span></a>
+      </li>
+	  
+	  <li class="nav-item">
+        <a href="email.html" class="btn btn-toggle align-items-center rounded w-100 tag_m  no_drop"><i class="fa fa-envelope icon-before"></i><span class="btn">Email</span></a>
+      </li>
+    </ul>
+    
+    
+      <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span>Saved reports</span>
+          <a class="link-secondary" href="#" aria-label="Add a new report">
+            <svg xmlns="#" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+          </a>
+        </h6>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link text-muted" href="#">
+              <svg xmlns="#" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              Integrations
+            </a>
+          </li>
+        </ul>
+        
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto common col-lg-10 px-md-4">
+       <div class="row crm_1">
+	   <div class="col-md-3">
+	    <div class="analytic_1l">
+		 <h5 class="mb-0">List Group</h5>
+		</div>
+	   </div>
+	   <div class="col-md-9">
+	    <div class="crm_1r pull-right">
+	      <ul>
+		   <li class="col_3 d-inline-block"><a href="#">Lorem</a> <i style="margin-left:5px; vertical-align:middle;" class="fa fa-chevron-right"></i></li>
+		   <li class="col_3 d-inline-block"><a href="#">Base UI</a> <i style="margin-left:5px; vertical-align:middle;" class="fa fa-chevron-right"></i></li>
+		   <li class="col_3 d-inline-block">List Group</li>
+		  </ul>
+		</div>
+	   </div>
+	  </div>
+       
+        <div class="row base_listg mt-2">
+	    <div class="col-lg-4 col-md-6">
+		  <div class="card">
+          <div class="card-header">
+             <h5>BASIC EXAMPLE</h5>
+          </div>
+          <div class="card-body">
+	          <p>The most basic list group is an unordered list with list items and the proper classes. Build upon it with the options that follow, or with your own CSS as needed.</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview45" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code45" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview45">
+              <ul class="list-group">
+  <li class="list-group-item">An item</li>
+  <li class="list-group-item">A second item</li>
+  <li class="list-group-item">A third item</li>
+  <li class="list-group-item">A fourth item</li>
+  <li class="list-group-item">And a fifth one</li>
+</ul>
+			</div>
+			<div class="tab-pane" id="code45">
+			<pre class="brush: html;">
+				<ul class="list-group">
+					<li class="list-group-item">An item</li>
+					<li class="list-group-item">A second item</li>
+					<li class="list-group-item">A third item</li>
+					<li class="list-group-item">A fourth item</li>
+					<li class="list-group-item">And a fifth one</li>
+				</ul>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		  
+		</div>
+		<div class="col-lg-4 col-md-6">
+		   <div class="card">
+          <div class="card-header">
+            <h5>ACTIVE ITEMS</h5>
+          </div>
+          <div class="card-body">
+	          <p>Add .active to a .list-group-item to indicate the current active selection.</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview46" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code46" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview46">
+              <ul class="list-group">
+  <li class="list-group-item active" aria-current="true">An active item</li>
+  <li class="list-group-item">A second item</li>
+  <li class="list-group-item">A third item</li>
+  <li class="list-group-item">A fourth item</li>
+  <li class="list-group-item">And a fifth one</li>
+</ul>
+			</div>
+			<div class="tab-pane" id="code46">
+			<pre class="brush: html;">
+				<ul class="list-group">
+					<li class="list-group-item active" aria-current="true">An active item</li>
+					<li class="list-group-item">A second item</li>
+					<li class="list-group-item">A third item</li>
+					<li class="list-group-item">A fourth item</li>
+					<li class="list-group-item">And a fifth one</li>
+				</ul>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		  
+		</div>
+		<div class="col-lg-4 col-md-6">
+		  <div class="card">
+          <div class="card-header">
+            <h5>DISABLED ITEMS</h5>
+          </div>
+          <div class="card-body">
+	         <p>Add .active to a .list-group-item to indicate the current active selection.</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview47" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code47" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview47">
+              <ul class="list-group">
+  <li class="list-group-item disabled" aria-disabled="true">A disabled item</li>
+  <li class="list-group-item">A second item</li>
+  <li class="list-group-item">A third item</li>
+  <li class="list-group-item">A fourth item</li>
+  <li class="list-group-item">And a fifth one</li>
+</ul>
+			</div>
+			<div class="tab-pane" id="code47">
+			<pre class="brush: html;">
+				<ul class="list-group">
+					<li class="list-group-item disabled" aria-disabled="true">A disabled item</li>
+					<li class="list-group-item">A second item</li>
+					<li class="list-group-item">A third item</li>
+					<li class="list-group-item">A fourth item</li>
+					<li class="list-group-item">And a fifth one</li>
+				</ul>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		  
+		</div>
+	   </div>
+	   
+	    <div class="row base_listg mt-4">
+	    <div class="col-lg-4 col-md-6">
+		   <div class="card">
+          <div class="card-header">
+             <h5>LINKS AND BUTTONS</h5>
+          </div>
+          <div class="card-body">
+	         <p>Use as or buttons to create actionable list group items with hover, disabled, and active states by adding .list-group-item-action.</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview48" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code48" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview48">
+               <div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+    The current link item
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+  <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+  <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+  <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
+</div>
+			</div>
+			<div class="tab-pane" id="code48">
+			<pre class="brush: html;">
+				<div class="list-group">
+					<a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+					The current link item
+					</a>
+					<a href="#" class="list-group-item list-group-item-action">A second link item</a>
+					<a href="#" class="list-group-item list-group-item-action">A third link item</a>
+					<a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+					<a class="list-group-item list-group-item-action disabled">A disabled link item</a>
+				</div>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		  
+		</div>
+		<div class="col-lg-4 col-md-6">
+		  <div class="card">
+          <div class="card-header">
+              <h5>FLUSH</h5>
+          </div>
+          <div class="card-body">
+	         <p>Add .list-group-flush to remove some borders and rounded corners to render list group items edge-to-edge in a parent container (e.g., cards).</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview49" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code49" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview49">
+               <ul class="list-group list-group-flush">
+  <li class="list-group-item">An item</li>
+  <li class="list-group-item">A second item</li>
+  <li class="list-group-item">A third item</li>
+  <li class="list-group-item">A fourth item</li>
+  <li class="list-group-item">And a fifth one</li>
+</ul>
+			</div>
+			<div class="tab-pane" id="code49">
+			<pre class="brush: html;">
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item">An item</li>
+					<li class="list-group-item">A second item</li>
+					<li class="list-group-item">A third item</li>
+					<li class="list-group-item">A fourth item</li>
+					<li class="list-group-item">And a fifth one</li>
+				</ul>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		  
+		</div>
+	    <div class="col-lg-4 col-md-6">
+		<div class="card">
+          <div class="card-header">
+             <h5>HORIZONTAL</h5>
+          </div>
+          <div class="card-body">
+	          <p>Add .list-group-horizontal to change the layout of list group items from vertical to horizontal across all breakpoints. Alternatively, choose a responsive variant .list-group-horizontal-{sm|md|lg|xl} to make a list group horizontal starting at that breakpoint’s min-width.</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview50" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code50" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview50">
+                  	  <ul class="list-group list-group-horizontal">
+  <li class="list-group-item">An item</li>
+  <li class="list-group-item">A second item</li>
+  <li class="list-group-item">A third item</li>
+</ul>
+<ul class="list-group list-group-horizontal-sm">
+  <li class="list-group-item">An item</li>
+  <li class="list-group-item">A second item</li>
+  <li class="list-group-item">A third item</li>
+</ul>
+<ul class="list-group list-group-horizontal-md">
+  <li class="list-group-item">An item</li>
+  <li class="list-group-item">A second item</li>
+  <li class="list-group-item">A third item</li>
+</ul>
+<ul class="list-group list-group-horizontal-lg">
+  <li class="list-group-item">An item</li>
+  <li class="list-group-item">A second item</li>
+  <li class="list-group-item">A third item</li>
+</ul>
+<ul class="list-group list-group-horizontal-xl">
+  <li class="list-group-item">An item</li>
+  <li class="list-group-item">A second item</li>
+  <li class="list-group-item">A third item</li>
+</ul>
+<ul class="list-group list-group-horizontal-xxl">
+  <li class="list-group-item">An item</li>
+  <li class="list-group-item">A second item</li>
+  <li class="list-group-item">A third item</li>
+</ul>
+			</div>
+			<div class="tab-pane" id="code50">
+			<pre class="brush: html;">
+				<ul class="list-group list-group-horizontal">
+					<li class="list-group-item">An item</li>
+					<li class="list-group-item">A second item</li>
+					<li class="list-group-item">A third item</li>
+				</ul>
+				
+				<ul class="list-group list-group-horizontal-sm">
+					<li class="list-group-item">An item</li>
+					<li class="list-group-item">A second item</li>
+					<li class="list-group-item">A third item</li>
+				</ul>
+				
+				<ul class="list-group list-group-horizontal-md">
+					<li class="list-group-item">An item</li>
+					<li class="list-group-item">A second item</li>
+					<li class="list-group-item">A third item</li>
+				</ul>
+				
+				<ul class="list-group list-group-horizontal-lg">
+					<li class="list-group-item">An item</li>
+					<li class="list-group-item">A second item</li>
+					<li class="list-group-item">A third item</li>
+				</ul>
+				
+				<ul class="list-group list-group-horizontal-xl">
+					<li class="list-group-item">An item</li>
+					<li class="list-group-item">A second item</li>
+					<li class="list-group-item">A third item</li>
+				</ul>
+				
+				<ul class="list-group list-group-horizontal-xxl">
+					<li class="list-group-item">An item</li>
+					<li class="list-group-item">A second item</li>
+					<li class="list-group-item">A third item</li>
+				</ul>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		  
+		</div>
+	   </div>
+	   
+	    <div class="row base_listg mt-4">
+	    <div class="col-lg-4 col-md-6">
+		  <div class="card">
+          <div class="card-header">
+              <h5>CONTEXTUAL CLASSES</h5>
+          </div>
+          <div class="card-body">
+	         <p>Use contextual classes to style list items with a stateful background and color.</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview51" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code51" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview51">
+              <ul class="list-group">
+  <li class="list-group-item">A simple default list group item</li>
+
+  <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
+  <li class="list-group-item list-group-item-secondary">A simple secondary list group item</li>
+  <li class="list-group-item list-group-item-success">A simple success list group item</li>
+  <li class="list-group-item list-group-item-danger">A simple danger list group item</li>
+  <li class="list-group-item list-group-item-warning">A simple warning list group item</li>
+  <li class="list-group-item list-group-item-info">A simple info list group item</li>
+  <li class="list-group-item list-group-item-light">A simple light list group item</li>
+  <li class="list-group-item list-group-item-dark">A simple dark list group item</li>
+</ul>
+			</div>
+			<div class="tab-pane" id="code51">
+			<pre class="brush: html;">
+				<ul class="list-group">
+					<li class="list-group-item">A simple default list group item</li>
+					<li class="list-group-item list-group-item-primary">A simple primary list group item</li>
+					<li class="list-group-item list-group-item-secondary">A simple secondary list group item</li>
+					<li class="list-group-item list-group-item-success">A simple success list group item</li>
+					<li class="list-group-item list-group-item-danger">A simple danger list group item</li>
+					<li class="list-group-item list-group-item-warning">A simple warning list group item</li>
+					<li class="list-group-item list-group-item-info">A simple info list group item</li>
+					<li class="list-group-item list-group-item-light">A simple light list group item</li>
+					<li class="list-group-item list-group-item-dark">A simple dark list group item</li>
+				</ul>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+
+		</div>
+		<div class="col-lg-4 col-md-6">
+		  <div class="card">
+          <div class="card-header">
+             <h5>CONTEXTUAL CLASSES WITH LINK</h5>
+          </div>
+          <div class="card-body">
+	          <p>Use contextual classes to style list items with a stateful background and color.</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview52" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code52" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview52">
+               <div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action">A simple default list group item</a>
+
+  <a href="#" class="list-group-item list-group-item-action list-group-item-primary">A simple primary list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">A simple secondary list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-success">A simple success list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-danger">A simple danger list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-warning">A simple warning list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-info">A simple info list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
+</div>
+			</div>
+			<div class="tab-pane" id="code52">
+			<pre class="brush: html;">
+				<div class="list-group">
+					<a href="#" class="list-group-item list-group-item-action">A simple default list group item</a>
+					<a href="#" class="list-group-item list-group-item-action list-group-item-primary">A simple primary list group item</a>
+					<a href="#" class="list-group-item list-group-item-action list-group-item-secondary">A simple secondary list group item</a>
+					<a href="#" class="list-group-item list-group-item-action list-group-item-success">A simple success list group item</a>
+					<a href="#" class="list-group-item list-group-item-action list-group-item-danger">A simple danger list group item</a>
+					<a href="#" class="list-group-item list-group-item-action list-group-item-warning">A simple warning list group item</a>
+					<a href="#" class="list-group-item list-group-item-action list-group-item-info">A simple info list group item</a>
+					<a href="#" class="list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
+					<a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
+				</div>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		  
+		</div>
+		<div class="col-lg-4 col-md-12">
+		  <div class="card">
+          <div class="card-header">
+            <h5>CUSTOM CONTENT</h5>
+          </div>
+          <div class="card-body">
+	         <p>Add nearly any HTML within, even for linked list groups like the one below, with the help of flexbox utilities.</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview53" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code53" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview53">
+                <div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">List group item heading</h5>
+      <small>3 days ago</small>
+    </div>
+    <p class="mb-1">Some placeholder content in a paragraph.</p>
+    <small>And some small print.</small>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">List group item heading</h5>
+      <small class="text-muted">3 days ago</small>
+    </div>
+    <p class="mb-1">Some placeholder content in a paragraph.</p>
+    <small class="text-muted">And some muted small print.</small>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">List group item heading</h5>
+      <small class="text-muted">3 days ago</small>
+    </div>
+    <p class="mb-1">Some placeholder content in a paragraph.</p>
+    <small class="text-muted">And some muted small print.</small>
+  </a>
+</div>
+			</div>
+			<div class="tab-pane" id="code53">
+			<pre class="brush: html;">
+				<div class="list-group">
+					<a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+						<div class="d-flex w-100 justify-content-between">
+							<h5 class="mb-1">List group item heading</h5>
+							<small>3 days ago</small>
+						</div>
+						<p class="mb-1">Some placeholder content in a paragraph.</p>
+						<small>And some small print.</small>
+					</a>
+					
+					<a href="#" class="list-group-item list-group-item-action">
+						<div class="d-flex w-100 justify-content-between">
+							<h5 class="mb-1">List group item heading</h5>
+							<small class="text-muted">3 days ago</small>
+						</div>
+						<p class="mb-1">Some placeholder content in a paragraph.</p>
+						<small class="text-muted">And some muted small print.</small>
+					</a>
+					
+					<a href="#" class="list-group-item list-group-item-action">
+						<div class="d-flex w-100 justify-content-between">
+							<h5 class="mb-1">List group item heading</h5>
+							<small class="text-muted">3 days ago</small>
+						</div>
+						<p class="mb-1">Some placeholder content in a paragraph.</p>
+						<small class="text-muted">And some muted small print.</small>
+					</a>
+				</div>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+
+		</div>
+	   </div>
+	   
+	    <div class="row base_listg mt-4">
+	    <div class="col-lg-4 col-md-6">
+		 <div class="card">
+          <div class="card-header">
+            <h5>WITH BADGES</h5>
+          </div>
+          <div class="card-body">
+	          <p>Add badges to any list group item to show unread counts, activity, and more with the help of some utilities.</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview54" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code54" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview54">
+                <ul class="list-group">
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    A list item
+    <span class="badge bg-primary rounded-pill">14</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    A second list item
+    <span class="badge bg-primary rounded-pill">2</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    A third list item
+    <span class="badge bg-primary rounded-pill">1</span>
+  </li>
+</ul>
+			</div>
+			<div class="tab-pane" id="code54">
+			<pre class="brush: html;">
+				<ul class="list-group">
+					<li class="list-group-item d-flex justify-content-between align-items-center">
+					  A list item
+					  <span class="badge bg-primary rounded-pill">14</span>
+					</li>
+					
+					<li class="list-group-item d-flex justify-content-between align-items-center">
+					  A second list item
+					  <span class="badge bg-primary rounded-pill">2</span>
+					</li>
+					
+					<li class="list-group-item d-flex justify-content-between align-items-center">
+					  A third list item
+					  <span class="badge bg-primary rounded-pill">1</span>
+					</li>
+				</ul>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		  
+		</div>
+		<div class="col-lg-4 col-md-6">
+		 <div class="card">
+          <div class="card-header">
+             <h5>CHECKBOXES AND RADIOS</h5>
+          </div>
+          <div class="card-body">
+	         <p>Place Bootstrap’s checkboxes and radios within list group items and customize as needed. You can use them without label s, but please remember to include an aria-label attribute and value for accessibility.</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview55" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code55" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview55">
+               <ul class="list-group">
+  <li class="list-group-item">
+    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+    First checkbox
+  </li>
+  <li class="list-group-item">
+    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+    Second checkbox
+  </li>
+  <li class="list-group-item">
+    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+    Third checkbox
+  </li>
+  <li class="list-group-item">
+    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+    Fourth checkbox
+  </li>
+  <li class="list-group-item">
+    <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+    Fifth checkbox
+  </li>
+</ul> 
+			</div>
+			<div class="tab-pane" id="code55">
+			<pre class="brush: html;">
+				<ul class="list-group">
+					<li class="list-group-item">
+						<input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+						First checkbox
+					</li>
+					
+					<li class="list-group-item">
+						<input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+						Second checkbox
+					</li>
+					
+					<li class="list-group-item">
+						<input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+						Third checkbox
+					</li>
+					
+					<li class="list-group-item">
+						<input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+						Fourth checkbox
+					</li>
+					
+					<li class="list-group-item">
+						<input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+						Fifth checkbox
+					</li>
+				</ul>
+			</pre>
+			</div>
+			</div> 
+          </div>
+      </div>
+		  
+		</div>
+		<div class="col-lg-4 col-md-6">
+		  <div class="card">
+          <div class="card-header">
+             <h5>NUMBERED</h5>
+          </div>
+          <div class="card-body">
+	         <p>Numbers are generated by counter-reset on the ol, and then styled and placed with a ::before psuedo-element on the li with counter-increment and content. p</p>
+		  <ul class="nav nav-tabs mb-3">
+			<li class="nav-item">
+			<a href="#preview56" data-bs-toggle="tab" aria-expanded="false" style="font-weight:bold;" class="nav-link active">
+				<i class="mdi mdi-home-variant d-md-none d-block"></i>
+				<span class="d-md-block">Preview</span>
+			</a>
+			</li>
+			<li class="nav-item">
+			<a href="#code56" data-bs-toggle="tab" aria-expanded="true" style="font-weight:bold;" class="nav-link">
+				<i class="mdi mdi-account-circle d-md-none d-block"></i>
+				<span class="d-md-block">Code</span>
+			</a>
+			</li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane active" id="preview56">
+                <ol class="list-group list-group-numbered">
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">Subheading</div>
+      Content for list item
+    </div>
+    <span class="badge bg-primary rounded-pill">14</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">Subheading</div>
+      Content for list item
+    </div>
+    <span class="badge bg-primary rounded-pill">14</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">Subheading</div>
+      Content for list item
+    </div>
+    <span class="badge bg-primary rounded-pill">14</span>
+  </li>
+</ol>
+			</div>
+			<div class="tab-pane" id="code56">
+			<pre class="brush: html;">
+				<ol class="list-group list-group-numbered">
+					<li class="list-group-item d-flex justify-content-between align-items-start">
+						<div class="ms-2 me-auto">
+							<div class="fw-bold">Subheading</div>
+							Content for list item
+						</div>
+						<span class="badge bg-primary rounded-pill">14</span>
+					</li>
+					
+					<li class="list-group-item d-flex justify-content-between align-items-start">
+						<div class="ms-2 me-auto">
+							<div class="fw-bold">Subheading</div>
+							Content for list item
+						</div>
+						<span class="badge bg-primary rounded-pill">14</span>
+					</li>
+					
+					<li class="list-group-item d-flex justify-content-between align-items-start">
+						<div class="ms-2 me-auto">
+							<div class="fw-bold">Subheading</div>
+							Content for list item
+						</div>
+						<span class="badge bg-primary rounded-pill">14</span>
+					</li>
+				</ol>
+			</pre>
+			</div>
+			</div>
+          </div>
+      </div>
+		  
+		</div>
+	   </div>
+			   
+	   <div class="row footer mt-4" style="border-top:1px solid #ddd; padding-top:20px;">
+	   <div class="col-md-8">
+	    <div class="footer_1l">
+		  <p class="mb-0 col_3">© 2013 Your Website Name. All Rights Reserved | Design by <a class="col_1 font-weight-bold" href="http://www.templateonweb.com">TemplateOnWeb</a></p>
+		</div>
+	   </div>
+	   <div class="col-md-4">
+	    <div class="footer_1r" style="text-align:right;">
+		 <ul>
+		  <li class="d-inline font_14"><a class="col_3" href="#">About </a></li>
+		  <li class="d-inline font_14"><a class="col_3" href="#">Support </a></li>
+		  <li class="d-inline font_14"><a class="col_3" href="#">Contact Us </a></li>
+		 </ul>
+		</div>
+	   </div>
+	  </div>
+    </main>
+  </div>
+</div>
+
+
+<script src="js/bootstrap.bundle.min.js" ></script>
+
+</script><script src="js/global.js"></script>
+  
+
+</body></html>
